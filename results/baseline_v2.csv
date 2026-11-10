@@ -1,0 +1,6 @@
+schema_version,run_id,seq,start_time_utc,model,prompt_chars,max_tokens,status,outcome,first_token_ms,first_reasoning_ms,total_ms,tokens_in,tokens_out,content_chars,reasoning_chars,finish_reason,done_received,usage_received,retry_after,rl_limit_requests,rl_limit_tokens,rl_remaining_requests,rl_remaining_tokens,rl_reset_requests,rl_reset_tokens,error_body
+2,run-20261110T084954,0,2026-11-10T08:49:54.375+00:00,openai/gpt-oss-20b,41,600,200,ok,2625.0,2281.0,2625.0,81,193,380,567,stop,True,True,,1000,8000,999,7719,1m26.4s,2.107s,
+2,run-20261110T084954,1,2026-11-10T08:50:00.022+00:00,openai/gpt-oss-20b,59,600,200,ok,2578.0,1360.0,2891.0,84,530,422,1581,stop,True,True,,1000,8000,998,7700,2m52.8s,2.25s,
+2,run-20261110T084954,2,2026-11-10T08:50:05.929+00:00,openai/gpt-oss-20b,62,600,200,ok,1954.0,1657.0,2235.0,83,269,1168,128,stop,True,True,,1000,8000,997,7387,4m19.2s,4.597s,
+2,run-20261110T084954,3,2026-11-10T08:50:11.175+00:00,openai/gpt-oss-20b,73,600,200,ok,2359.0,1265.0,2359.0,88,386,306,1106,stop,True,True,,1000,8000,996,7382,5m45.6s,4.635s,
+2,run-20261110T084954,4,2026-11-10T08:50:16.547+00:00,openai/gpt-oss-20b,53,600,200,ok,1469.0,1140.0,1484.0,80,123,394,209,stop,True,True,,1000,8000,995,7727,7m12s,2.047s,
