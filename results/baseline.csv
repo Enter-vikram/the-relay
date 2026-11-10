@@ -1,0 +1,6 @@
+run_id,seq,start_time_utc,model,prompt_chars,max_tokens,status,outcome,first_token_ms,total_ms,tokens_in,tokens_out,out_chars,retry_after,rl_limit_requests,rl_limit_tokens,rl_remaining_requests,rl_remaining_tokens,rl_reset_requests,rl_reset_tokens,error_body
+run-20261110T081856,0,2026-11-10T08:18:56.874+00:00,openai/gpt-oss-20b,41,300,200,ok,1656.0,2156.0,81,219,1191,,1000,8000,999,7697,1m26.4s,2.272s,
+run-20261110T081856,1,2026-11-10T08:19:02.046+00:00,openai/gpt-oss-20b,59,300,200,ok,1562.0,2140.0,84,300,1029,,1000,8000,998,7674,2m52.8s,2.445s,
+run-20261110T081856,2,2026-11-10T08:19:07.200+00:00,openai/gpt-oss-20b,62,300,200,ok,1563.0,1875.0,83,263,1272,,1000,8000,997,7644,4m19.2s,2.67s,
+run-20261110T081856,3,2026-11-10T08:19:12.082+00:00,openai/gpt-oss-20b,73,300,200,ok,1547.0,3125.0,88,300,1075,,1000,8000,996,7612,5m45.6s,2.91s,
+run-20261110T081856,4,2026-11-10T08:19:18.202+00:00,openai/gpt-oss-20b,53,300,200,ok,1391.0,1734.0,80,121,597,,1000,8000,995,7657,7m12s,2.572s,
