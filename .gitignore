@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Raw PDFs are re-downloadable; keep results/ tracked on purpose.
+data/index/
