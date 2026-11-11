@@ -198,3 +198,28 @@ def test_baseline_normalisation_maps_outcomes_and_keeps_real_label():
     recs = analyze.normalize_baseline(analyze.RES / "baseline_v2.csv")
     assert len(recs) == 5 and {r.source for r in recs} == {"real"} and {r.status for r in recs} == {"ok"}
     assert all(r.scenario == "real-baseline-v2" and r.first_token_ms and r.tokens_in for r in recs)
+
+
+def test_report_checker_requires_the_twelve_headings(tmp_path):
+    from scripts.check_report import HEADINGS, check, main
+    good = "\n".join(f"## {i}. {h}\ntext [TODO]" for i, h in enumerate(HEADINGS, 1))
+    assert check(good)["headings_ok"] and check(good)["placeholders"] == 12
+    swapped = good.replace("## 4. Where the time goes", "## 4. Something else")
+    assert not check(swapped)["headings_ok"]
+    p = tmp_path / "r.md"
+    p.write_text(swapped, encoding="utf-8")
+    assert main(["--file", str(p)]) == 1
+    p.write_text(good, encoding="utf-8")
+    assert main(["--file", str(p)]) == 0
+
+
+def test_build_report_fills_markers_and_marks_table3_not_measured():
+    from scripts.build_report import drop_retry_rows, fill, sections, t3_block
+    assert "not measured" in t3_block({"Table 3: x": "not measured: needs questions"})
+    assert t3_block({"Table 3: x": "| a |\n|---|\n| 1 |"}).startswith("| a |")
+    t = "| s | x |\n| retry_fixed | 1 |\n| steady | 2 |"
+    assert "retry_fixed" not in drop_retry_rows(t) and "steady" in drop_retry_rows(t)
+    out = fill("a <!-- BEGIN:X --><!-- END:X --> b", {"X": "T"})
+    assert "<!-- BEGIN:X -->\nT\n<!-- END:X -->" in out
+    assert fill(out, {"X": "T"}) == out            # idempotent
+    assert sections("## A\nbody\n## B\nmore") == {"A": "body", "B": "more"}

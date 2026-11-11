@@ -22,7 +22,7 @@ python -m scripts.build_index
 python -m pytest -q
 ```
 Paste your key into `.env` yourself. It is git-ignored; never share it.
-If the download fails (proxy/network), put the three PDFs in `data\papers` using the names printed by the script and rerun verify.
+If the download fails (proxy/network), put the three PDFs in `research\papers` using the file names the script reports and rerun verify.
 
 ## Run
 ```cmd
@@ -38,6 +38,7 @@ python -m scripts.generate_report
 Raw files in `results\raw` are immutable; derived `results.csv`, `diagnostics.csv`, `report\tables.md` are rebuilt.
 
 ## Remaining manual steps
+0. If you already downloaded and indexed the papers, skip setup steps that repeat that work.
 1. `python -m scripts.build_embeddings` (optional hybrid; needs `pip install -r requirements-optional.txt`).
 2. Author `benchmarks\questions.jsonl` from the real PDFs (see `benchmarks\README.md`), then `python -m experiments.validate_benchmark`.
 3. `python -m scripts.run_benchmarks` (retrieval only, no quota). Add `--sweep` to tune sufficiency thresholds.

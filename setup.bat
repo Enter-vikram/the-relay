@@ -1,6 +1,7 @@
 @echo off
 REM The Relay - one-shot setup for Windows CMD. Never reads or prints your API key.
 setlocal
+set PYTHONUTF8=1
 python --version || (echo Python 3.11+ is required & exit /b 1)
 if not exist .venv ( python -m venv .venv || exit /b 1 )
 call .venv\Scripts\activate.bat
