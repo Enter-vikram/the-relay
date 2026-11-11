@@ -1,0 +1,33 @@
+request_id,scenario,final_reason,priority,attempts,queue_wait_ms,limiter_wait_ms,model_ttft_ms,model_total_ms,retry_delay_ms,est_tokens_in,queue_len_at_submit,stage_retrieval_ms,stage_verification_ms,stage_generation_ms,model_calls,user_message,run_id,seed
+lt-main-burst-0000,burst,ok,0,1,0.0,0.0,2364.8,2454.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0001,burst,ok,0,1,0.0,0.0,1968.9,2203.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0002,burst,ok,0,1,0.0,0.0,2564.6,2600.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0003,burst,ok,0,1,0.0,0.0,2167.5,2530.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0004,burst,ok,1,1,0.0,0.0,2018.3,2093.6,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0005,burst,ok,0,1,0.0,0.0,2535.2,2581.9,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0006,burst,ok,0,1,0.0,0.0,1633.9,2342.8,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0007,burst,admission_wait,0,0,0.0,26855.9,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0008,burst,admission_wait,1,0,25654.8,0.0,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0009,burst,admission_wait,1,0,25095.9,0.0,,,0.0,1476,1,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0010,burst,ok,0,1,1389.3,0.0,2817.7,3216.6,0.0,1476,2,,,,,,lt-main,1
+lt-main-burst-0011,burst,admission_wait,0,0,1733.7,24522.6,,,0.0,1476,3,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0012,burst,admission_wait,0,0,1894.9,24348.5,,,0.0,1476,4,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0013,burst,ok,0,1,4572.1,6039.6,1693.6,1970.4,0.0,1476,5,,,,,,lt-main,1
+lt-main-burst-0014,burst,admission_wait,1,0,24602.8,0.0,,,0.0,1476,6,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0015,burst,ok,0,1,12015.5,10320.1,1926.2,2134.3,0.0,1476,7,,,,,,lt-main,1
+lt-main-burst-0016,burst,admission_wait,1,0,24433.4,0.0,,,0.0,1476,8,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0017,burst,admission_wait,0,0,24409.4,0.0,,,0.0,1476,9,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0018,burst,admission_wait,0,0,24259.3,0.0,,,0.0,1476,10,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0019,burst,admission_wait,0,0,24122.5,0.0,,,0.0,1476,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0020,burst,admission_wait,1,0,23582.2,0.0,,,0.0,1476,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0021,burst,admission_wait,1,0,23460.0,0.0,,,0.0,1476,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0022,burst,admission_wait,0,0,23042.1,0.0,,,0.0,1476,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0023,burst,admission_wait,0,0,22928.8,0.0,,,0.0,1476,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0024,burst,admission_wait,0,0,22909.5,0.0,,,0.0,1476,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0025,burst,ok,0,1,0.0,7258.6,1431.3,1492.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0026,burst,ok,0,1,0.0,0.0,1846.4,1933.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0027,burst,ok,0,1,0.0,0.0,1283.6,1349.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0028,burst,ok,0,1,0.0,0.0,2858.2,3113.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0029,burst,ok,0,1,0.0,0.0,2532.2,2574.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0030,burst,ok,0,1,0.0,0.0,2971.6,3252.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0031,burst,ok,0,1,0.0,0.0,1584.2,1591.8,0.0,1476,0,,,,,,lt-main,1

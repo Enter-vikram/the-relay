@@ -1,0 +1,22 @@
+request_id,scenario,final_reason,priority,attempts,queue_wait_ms,limiter_wait_ms,model_ttft_ms,model_total_ms,retry_delay_ms,est_tokens_in,queue_len_at_submit,stage_retrieval_ms,stage_verification_ms,stage_generation_ms,model_calls,user_message,run_id,seed
+lt-main-limit_halved-0000,limit_halved,ok,0,1,0.0,0.0,2355.0,2443.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0001,limit_halved,ok,1,1,0.0,0.0,1968.9,2202.8,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0002,limit_halved,ok,0,1,0.0,0.0,2564.8,2599.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0003,limit_halved,ok,0,1,0.0,0.0,2167.6,2530.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0004,limit_halved,ok,0,1,0.0,0.0,2018.9,2093.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0005,limit_halved,ok,0,1,0.0,0.0,2394.1,2438.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0006,limit_halved,ok,0,1,0.0,0.0,1462.4,2096.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0007,limit_halved,ok,0,2,0.0,0.0,1593.2,1663.9,1000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0008,limit_halved,ok,0,2,0.0,0.0,1224.4,1315.3,11000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0009,limit_halved,ok,0,2,0.0,0.0,1921.6,2024.8,16000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0010,limit_halved,ok,0,2,0.0,0.0,1859.9,1954.9,13000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0011,limit_halved,ok,0,3,0.0,0.0,1284.5,1349.9,24000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0012,limit_halved,rate_limited,0,2,0.0,4054.8,,,20000.0,1476,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-main,1
+lt-main-limit_halved-0013,limit_halved,ok,0,2,0.0,13431.2,2087.6,2482.2,1000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0014,limit_halved,rate_limited,0,1,0.0,0.0,,,0.0,1476,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-main,1
+lt-main-limit_halved-0015,limit_halved,ok,1,1,0.0,0.0,1152.4,1350.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0016,limit_halved,ok,0,2,0.0,0.0,1954.2,2027.2,5000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0017,limit_halved,rate_limited,0,1,0.0,0.0,,,0.0,1476,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-main,1
+lt-main-limit_halved-0018,limit_halved,ok,0,1,0.0,0.0,2767.8,2825.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0019,limit_halved,rate_limited,1,1,0.0,0.0,,,0.0,1476,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-main,1
+lt-main-limit_halved-0020,limit_halved,ok,1,1,0.0,0.0,1557.6,1591.1,0.0,1476,0,,,,,,lt-main,1

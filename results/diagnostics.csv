@@ -1,0 +1,897 @@
+request_id,scenario,final_reason,priority,attempts,queue_wait_ms,limiter_wait_ms,model_ttft_ms,model_total_ms,retry_delay_ms,est_tokens_in,queue_len_at_submit,stage_retrieval_ms,stage_verification_ms,stage_generation_ms,model_calls,user_message,run_id,seed
+run-20261110T084954-0000,real-baseline-v2,ok,,1,,,2625.0,2625.0,,,,,,,,,run-20261110T084954,
+run-20261110T084954-0001,real-baseline-v2,ok,,1,,,2578.0,2891.0,,,,,,,,,run-20261110T084954,
+run-20261110T084954-0002,real-baseline-v2,ok,,1,,,1954.0,2235.0,,,,,,,,,run-20261110T084954,
+run-20261110T084954-0003,real-baseline-v2,ok,,1,,,2359.0,2359.0,,,,,,,,,run-20261110T084954,
+run-20261110T084954-0004,real-baseline-v2,ok,,1,,,1469.0,1484.0,,,,,,,,,run-20261110T084954,
+lt-main-burst-0000,burst,ok,0,1,0.0,0.0,2364.8,2454.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0001,burst,ok,0,1,0.0,0.0,1968.9,2203.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0002,burst,ok,0,1,0.0,0.0,2564.6,2600.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0003,burst,ok,0,1,0.0,0.0,2167.5,2530.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0004,burst,ok,1,1,0.0,0.0,2018.3,2093.6,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0005,burst,ok,0,1,0.0,0.0,2535.2,2581.9,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0006,burst,ok,0,1,0.0,0.0,1633.9,2342.8,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0007,burst,admission_wait,0,0,0.0,26855.9,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0008,burst,admission_wait,1,0,25654.8,0.0,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0009,burst,admission_wait,1,0,25095.9,0.0,,,0.0,1476,1,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0010,burst,ok,0,1,1389.3,0.0,2817.7,3216.6,0.0,1476,2,,,,,,lt-main,1
+lt-main-burst-0011,burst,admission_wait,0,0,1733.7,24522.6,,,0.0,1476,3,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0012,burst,admission_wait,0,0,1894.9,24348.5,,,0.0,1476,4,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0013,burst,ok,0,1,4572.1,6039.6,1693.6,1970.4,0.0,1476,5,,,,,,lt-main,1
+lt-main-burst-0014,burst,admission_wait,1,0,24602.8,0.0,,,0.0,1476,6,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0015,burst,ok,0,1,12015.5,10320.1,1926.2,2134.3,0.0,1476,7,,,,,,lt-main,1
+lt-main-burst-0016,burst,admission_wait,1,0,24433.4,0.0,,,0.0,1476,8,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0017,burst,admission_wait,0,0,24409.4,0.0,,,0.0,1476,9,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0018,burst,admission_wait,0,0,24259.3,0.0,,,0.0,1476,10,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0019,burst,admission_wait,0,0,24122.5,0.0,,,0.0,1476,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0020,burst,admission_wait,1,0,23582.2,0.0,,,0.0,1476,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0021,burst,admission_wait,1,0,23460.0,0.0,,,0.0,1476,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0022,burst,admission_wait,0,0,23042.1,0.0,,,0.0,1476,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0023,burst,admission_wait,0,0,22928.8,0.0,,,0.0,1476,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0024,burst,admission_wait,0,0,22909.5,0.0,,,0.0,1476,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-burst-0025,burst,ok,0,1,0.0,7258.6,1431.3,1492.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0026,burst,ok,0,1,0.0,0.0,1846.4,1933.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0027,burst,ok,0,1,0.0,0.0,1283.6,1349.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0028,burst,ok,0,1,0.0,0.0,2858.2,3113.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0029,burst,ok,0,1,0.0,0.0,2532.2,2574.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0030,burst,ok,0,1,0.0,0.0,2971.6,3252.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-burst-0031,burst,ok,0,1,0.0,0.0,1584.2,1591.8,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0000,daily_exhausted,ok,0,1,0.0,0.0,2383.3,2472.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0001,daily_exhausted,ok,0,1,0.0,0.0,1971.4,2207.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0002,daily_exhausted,ok,0,1,0.0,0.0,2565.1,2598.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0003,daily_exhausted,ok,0,1,0.0,0.0,2166.8,2529.6,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0004,daily_exhausted,ok,0,1,0.0,0.0,2018.1,2094.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0005,daily_exhausted,ok,0,1,0.0,0.0,2393.2,2437.9,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0006,daily_exhausted,ok,1,1,0.0,0.0,1462.0,2096.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0007,daily_exhausted,ok,0,1,0.0,0.0,2520.4,2878.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0008,daily_exhausted,ok,0,1,0.0,0.0,1694.3,1971.8,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0009,daily_exhausted,ok,0,1,0.0,0.0,1925.8,2133.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0010,daily_exhausted,ok,1,1,0.0,0.0,1430.8,1493.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0011,daily_exhausted,ok,1,1,0.0,0.0,1847.1,1934.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0012,daily_exhausted,daily_exhausted,0,1,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0013,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0014,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0015,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0016,daily_exhausted,daily_budget,1,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0017,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0018,daily_exhausted,daily_budget,1,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0019,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0020,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0021,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0022,daily_exhausted,daily_budget,1,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0023,daily_exhausted,daily_budget,1,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0024,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0025,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0026,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0027,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0028,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0029,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-limit_halved-0000,limit_halved,ok,0,1,0.0,0.0,2355.0,2443.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0001,limit_halved,ok,1,1,0.0,0.0,1968.9,2202.8,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0002,limit_halved,ok,0,1,0.0,0.0,2564.8,2599.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0003,limit_halved,ok,0,1,0.0,0.0,2167.6,2530.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0004,limit_halved,ok,0,1,0.0,0.0,2018.9,2093.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0005,limit_halved,ok,0,1,0.0,0.0,2394.1,2438.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0006,limit_halved,ok,0,1,0.0,0.0,1462.4,2096.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0007,limit_halved,ok,0,2,0.0,0.0,1593.2,1663.9,1000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0008,limit_halved,ok,0,2,0.0,0.0,1224.4,1315.3,11000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0009,limit_halved,ok,0,2,0.0,0.0,1921.6,2024.8,16000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0010,limit_halved,ok,0,2,0.0,0.0,1859.9,1954.9,13000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0011,limit_halved,ok,0,3,0.0,0.0,1284.5,1349.9,24000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0012,limit_halved,rate_limited,0,2,0.0,4054.8,,,20000.0,1476,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-main,1
+lt-main-limit_halved-0013,limit_halved,ok,0,2,0.0,13431.2,2087.6,2482.2,1000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0014,limit_halved,rate_limited,0,1,0.0,0.0,,,0.0,1476,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-main,1
+lt-main-limit_halved-0015,limit_halved,ok,1,1,0.0,0.0,1152.4,1350.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0016,limit_halved,ok,0,2,0.0,0.0,1954.2,2027.2,5000.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0017,limit_halved,rate_limited,0,1,0.0,0.0,,,0.0,1476,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-main,1
+lt-main-limit_halved-0018,limit_halved,ok,0,1,0.0,0.0,2767.8,2825.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-limit_halved-0019,limit_halved,rate_limited,1,1,0.0,0.0,,,0.0,1476,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-main,1
+lt-main-limit_halved-0020,limit_halved,ok,1,1,0.0,0.0,1557.6,1591.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0000,overload,ok,0,1,0.0,0.0,2263.3,2347.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0001,overload,ok,0,1,0.0,0.0,1970.7,2203.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0002,overload,ok,0,1,0.0,0.0,2565.6,2599.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0003,overload,ok,0,1,0.0,0.0,2166.9,2529.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0004,overload,ok,0,1,0.0,0.0,2018.6,2094.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0005,overload,ok,0,1,0.0,0.0,2393.3,2438.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0006,overload,ok,0,1,0.0,3301.3,1462.6,2097.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0007,overload,admission_wait,0,0,0.0,26277.3,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0008,overload,ok,0,1,0.0,7211.7,2520.4,2878.6,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0009,overload,admission_wait,0,0,0.0,18170.1,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0010,overload,ok,0,1,0.0,11158.6,1692.9,1971.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0011,overload,admission_wait,0,0,0.0,22795.4,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0012,overload,ok,0,1,1341.8,25187.6,1432.1,1493.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0013,overload,admission_wait,0,0,0.0,23434.2,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0014,overload,ok,1,1,0.0,4421.8,1925.8,2133.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0015,overload,admission_wait,0,0,874.8,26392.6,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0016,overload,admission_wait,0,0,0.0,23499.0,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0017,overload,admission_wait,0,0,1078.4,24503.9,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0018,overload,ok,0,1,0.0,8727.7,1846.5,1933.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0019,overload,ok,1,1,8998.0,8873.6,1283.3,1349.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0020,overload,admission_wait,0,0,2850.0,10031.3,,,0.0,1476,1,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0021,overload,admission_wait,0,0,0.0,22226.9,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0022,overload,admission_wait,1,0,601.9,24137.6,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0023,overload,admission_wait,0,0,0.0,23926.4,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0024,overload,ok,0,1,0.0,3708.2,2856.7,3112.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0025,overload,ok,1,1,1306.9,9728.0,2533.0,2575.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0026,overload,admission_wait,0,0,0.0,22648.0,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0027,overload,admission_wait,0,0,1535.0,15630.0,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0028,overload,ok,0,1,0.0,8629.0,2970.6,3253.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0029,overload,admission_wait,0,0,0.0,19108.8,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0030,overload,admission_wait,1,0,2141.6,23048.2,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0031,overload,ok,0,1,0.0,7305.0,1584.7,1592.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0032,overload,admission_wait,0,0,0.0,17963.7,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0033,overload,ok,1,1,0.0,9625.2,2767.9,2825.9,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0034,overload,admission_wait,1,0,0.0,20676.5,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0035,overload,admission_wait,0,0,719.2,15630.9,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0036,overload,admission_wait,1,0,0.0,24412.2,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0037,overload,ok,0,1,0.0,4490.3,1459.9,1464.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0038,overload,admission_wait,0,0,0.0,23490.5,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0039,overload,admission_wait,0,0,0.0,23173.2,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0040,overload,ok,0,1,0.0,520.0,1250.2,1459.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0041,overload,ok,1,1,0.0,7949.3,2108.4,2110.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0042,overload,admission_wait,0,0,0.0,20420.0,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0043,overload,admission_wait,0,0,0.0,24973.2,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0044,overload,ok,0,1,0.0,5217.9,2253.6,2308.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0045,overload,admission_wait,0,0,0.0,15873.6,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0046,overload,admission_wait,0,0,0.0,24092.7,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0047,overload,ok,0,1,0.0,4748.9,1805.6,1966.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0048,overload,admission_wait,0,0,0.0,24798.8,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0049,overload,admission_wait,0,0,0.0,22699.5,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0050,overload,ok,0,1,0.0,2987.8,1991.2,2063.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0051,overload,admission_wait,0,0,0.0,26034.5,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0052,overload,ok,0,1,0.0,4662.9,2294.7,2415.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0053,overload,admission_wait,0,0,0.0,25247.9,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0054,overload,ok,0,1,0.0,7942.9,2321.9,2344.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0055,overload,admission_wait,0,0,0.0,18359.7,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0056,overload,ok,1,1,1468.4,10810.4,1749.8,1956.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0057,overload,admission_wait,0,0,0.0,22388.6,,,0.0,1476,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-main,1
+lt-main-overload-0058,overload,ok,0,1,368.5,25079.5,3213.3,3261.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-overload-0059,overload,ok,1,1,0.0,9162.8,1617.0,1668.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0000,steady,ok,0,1,0.0,0.0,2291.1,2380.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0001,steady,ok,0,1,0.0,0.0,1969.7,2203.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0002,steady,ok,0,1,0.0,0.0,2565.7,2599.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0003,steady,ok,0,1,0.0,0.0,2166.8,2529.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0004,steady,ok,0,1,0.0,0.0,2018.1,2094.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0005,steady,ok,0,1,0.0,0.0,2395.1,2440.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0006,steady,ok,0,1,0.0,0.0,1462.2,2096.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0007,steady,ok,0,1,0.0,0.0,2521.6,2877.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0008,steady,ok,1,1,0.0,0.0,1695.3,1973.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0009,steady,ok,0,1,0.0,0.0,1926.7,2133.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0010,steady,ok,0,1,0.0,0.0,1432.4,1493.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0011,steady,ok,0,1,0.0,0.0,1847.1,1934.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0012,steady,ok,1,1,0.0,0.0,1282.9,1348.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0013,steady,ok,1,1,0.0,0.0,2857.7,3113.6,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0014,steady,ok,0,1,0.0,0.0,2532.2,2574.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0015,steady,ok,0,1,0.0,0.0,2970.6,3252.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0016,steady,ok,0,1,0.0,0.0,1584.8,1592.6,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0017,steady,ok,0,1,0.0,0.0,2768.2,2825.9,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0018,steady,ok,1,1,0.0,0.0,1460.3,1464.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0019,steady,ok,0,1,0.0,0.0,1250.3,1456.9,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0020,steady,ok,1,1,0.0,0.0,2109.2,2112.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0021,steady,ok,0,1,0.0,0.0,2254.5,2310.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0022,steady,ok,0,1,0.0,0.0,1807.1,1966.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0023,steady,ok,0,1,0.0,0.0,1991.9,2062.9,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0024,steady,ok,1,1,0.0,0.0,2296.7,2416.3,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0025,steady,ok,1,1,0.0,0.0,2321.7,2344.8,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0026,steady,ok,0,1,0.0,0.0,1748.9,1956.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-steady-0027,steady,ok,0,1,0.0,0.0,1618.0,1669.0,0.0,1476,0,,,,,,lt-main,1
+lt-retry2-retry_exponential-0000,retry_exponential,ok,0,1,0.0,0.0,2203.2,2292.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0001,retry_exponential,ok,1,1,0.0,0.0,2084.6,2332.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0002,retry_exponential,ok,0,1,0.0,0.0,2718.5,2753.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0003,retry_exponential,ok,0,1,0.0,0.0,2295.1,2679.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0004,retry_exponential,ok,0,1,0.0,0.0,2137.3,2216.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0005,retry_exponential,ok,0,1,0.0,0.0,2534.5,2581.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0006,retry_exponential,ok,0,1,0.0,0.0,1549.1,2220.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0007,retry_exponential,ok,0,1,0.0,0.0,2668.6,3046.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0008,retry_exponential,ok,0,1,0.0,0.0,1794.2,2087.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0009,retry_exponential,ok,0,1,0.0,0.0,2152.7,2383.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0010,retry_exponential,ok,0,1,0.0,0.0,1515.0,1579.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0011,retry_exponential,ok,0,1,0.0,0.0,1953.2,2046.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0012,retry_exponential,ok,0,1,0.0,0.0,1358.6,1427.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0013,retry_exponential,ok,0,1,0.0,0.0,3024.6,3295.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0014,retry_exponential,ok,0,1,0.0,0.0,2681.5,2725.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0015,retry_exponential,ok,0,1,0.0,0.0,3146.0,3444.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0016,retry_exponential,ok,0,1,0.0,0.0,1677.6,1684.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0017,retry_exponential,ok,0,1,0.0,0.0,2930.1,2990.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0018,retry_exponential,ok,0,1,0.0,0.0,1544.7,1548.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0019,retry_exponential,ok,0,1,0.0,0.0,1395.8,1626.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0020,retry_exponential,ok,0,1,0.0,0.0,2230.4,2232.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0021,retry_exponential,ok,0,1,0.0,0.0,2385.7,2443.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0022,retry_exponential,ok,0,1,0.0,0.0,1911.4,2082.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0023,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0024,retry_exponential,ok,0,3,0.0,0.0,3611.5,3643.5,1500.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_exponential-0025,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0026,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0027,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0028,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0029,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0030,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0031,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0032,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0033,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0034,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0035,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0036,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0037,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0038,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0039,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0040,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0041,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0042,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0043,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0044,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0045,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0046,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0047,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0048,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0049,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0050,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0051,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0052,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0053,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0054,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0055,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0056,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0057,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0058,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0059,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0060,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0061,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0062,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0063,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0064,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0065,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0066,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0067,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0068,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0069,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0070,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0071,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0072,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0073,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0074,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0075,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0076,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0077,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0078,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0079,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0080,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0081,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0082,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0083,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0084,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0085,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0086,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0087,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0088,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0089,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0090,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0091,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0092,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0093,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0094,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0095,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0096,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0097,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0098,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0099,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0100,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0101,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0102,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0103,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0104,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0105,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0106,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0107,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0108,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0109,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0110,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0111,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0112,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0113,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0114,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0115,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0116,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0117,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0118,retry_exponential,rate_limited,0,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_exponential-0119,retry_exponential,rate_limited,1,6,0.0,0.0,,,15500.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0000,retry_fixed,ok,0,1,0.0,0.0,2198.5,2287.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0001,retry_fixed,ok,1,1,0.0,0.0,2084.5,2333.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0002,retry_fixed,ok,0,1,0.0,0.0,2716.6,2754.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0003,retry_fixed,ok,0,1,0.0,0.0,2294.4,2678.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0004,retry_fixed,ok,0,1,0.0,0.0,2137.2,2216.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0005,retry_fixed,ok,0,1,0.0,0.0,2534.1,2581.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0006,retry_fixed,ok,0,1,0.0,0.0,1550.6,2220.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0007,retry_fixed,ok,0,1,0.0,0.0,2670.6,3046.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0008,retry_fixed,ok,0,1,0.0,0.0,1793.1,2086.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0009,retry_fixed,ok,0,1,0.0,0.0,2152.3,2383.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0010,retry_fixed,ok,0,1,0.0,0.0,1515.6,1580.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0011,retry_fixed,ok,0,1,0.0,0.0,1954.2,2047.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0012,retry_fixed,ok,0,1,0.0,0.0,1358.6,1427.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0013,retry_fixed,ok,0,1,0.0,0.0,3024.2,3295.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0014,retry_fixed,ok,0,1,0.0,0.0,2681.3,2724.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0015,retry_fixed,ok,0,1,0.0,0.0,3145.7,3443.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0016,retry_fixed,ok,0,1,0.0,0.0,1676.6,1684.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0017,retry_fixed,ok,0,1,0.0,0.0,2929.3,2989.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0018,retry_fixed,ok,0,1,0.0,0.0,1544.9,1548.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0019,retry_fixed,ok,0,1,0.0,0.0,1396.0,1627.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0020,retry_fixed,ok,0,1,0.0,0.0,2231.5,2233.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0021,retry_fixed,ok,0,1,0.0,0.0,2385.8,2443.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0022,retry_fixed,ok,0,1,0.0,0.0,1910.1,2080.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0023,retry_fixed,ok,0,4,0.0,0.0,3613.2,3642.4,3000.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_fixed-0024,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0025,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0026,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0027,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0028,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0029,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0030,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0031,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0032,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0033,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0034,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0035,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0036,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0037,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0038,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0039,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0040,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0041,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0042,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0043,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0044,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0045,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0046,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0047,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0048,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0049,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0050,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0051,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0052,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0053,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0054,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0055,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0056,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0057,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0058,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0059,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0060,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0061,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0062,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0063,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0064,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0065,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0066,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0067,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0068,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0069,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0070,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0071,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0072,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0073,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0074,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0075,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0076,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0077,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0078,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0079,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0080,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0081,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0082,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0083,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0084,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0085,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0086,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0087,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0088,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0089,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0090,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0091,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0092,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0093,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0094,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0095,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0096,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0097,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0098,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0099,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0100,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0101,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0102,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0103,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0104,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0105,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0106,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0107,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0108,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0109,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0110,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0111,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0112,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0113,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0114,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0115,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0116,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0117,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0118,retry_fixed,rate_limited,0,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_fixed-0119,retry_fixed,rate_limited,1,6,0.0,0.0,,,5000.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0000,retry_hardened,ok,0,1,0.0,0.0,2208.3,2297.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0001,retry_hardened,ok,1,1,0.0,0.0,2084.7,2332.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0002,retry_hardened,ok,0,1,0.0,0.0,2715.9,2751.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0003,retry_hardened,ok,0,1,0.0,0.0,2294.9,2679.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0004,retry_hardened,ok,0,1,0.0,0.0,2136.7,2215.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0005,retry_hardened,ok,0,1,0.0,0.0,2534.3,2581.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0006,retry_hardened,ok,0,1,0.0,0.0,1548.4,2220.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0007,retry_hardened,ok,0,1,0.0,0.0,2669.1,3046.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0008,retry_hardened,ok,0,1,0.0,0.0,1794.1,2087.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0009,retry_hardened,ok,0,1,0.0,0.0,2152.1,2383.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0010,retry_hardened,ok,0,1,0.0,0.0,1515.6,1580.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0011,retry_hardened,ok,0,1,0.0,0.0,1954.5,2046.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0012,retry_hardened,ok,0,1,0.0,0.0,1357.9,1426.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0013,retry_hardened,ok,0,1,0.0,0.0,3025.5,3295.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0014,retry_hardened,ok,0,1,0.0,0.0,2681.0,2725.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0015,retry_hardened,ok,0,1,0.0,0.0,3145.6,3443.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0016,retry_hardened,ok,0,1,0.0,0.0,1676.4,1684.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0017,retry_hardened,ok,0,1,0.0,0.0,2930.2,2990.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0018,retry_hardened,ok,0,1,0.0,2805.0,1460.3,1462.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0019,retry_hardened,admission_wait,0,0,0.0,24653.3,,,0.0,333,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0020,retry_hardened,ok,0,1,0.0,8012.0,2107.3,2109.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0021,retry_hardened,admission_wait,0,0,0.0,25879.6,,,0.0,333,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0022,retry_hardened,ok,0,1,0.0,569.1,1249.8,1456.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0023,retry_hardened,admission_wait,0,0,947.8,26842.9,,,0.0,333,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0024,retry_hardened,ok,0,1,3981.4,1480.6,2253.8,2308.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0025,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,1,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0026,retry_hardened,ok,0,1,4913.5,3139.3,1805.0,1966.4,0.0,333,2,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0027,retry_hardened,ok,0,1,8376.3,2640.8,1990.2,2060.5,0.0,333,2,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0028,retry_hardened,admission_wait,0,0,10854.1,13397.7,,,0.0,333,3,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0029,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,4,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0030,retry_hardened,ok,0,1,8569.0,2730.3,2295.4,2415.0,0.0,333,4,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0031,retry_hardened,admission_wait,0,0,11118.7,13613.4,,,0.0,333,5,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0032,retry_hardened,ok,0,1,10727.0,1583.7,2322.2,2344.7,0.0,333,6,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0033,retry_hardened,admission_wait,0,0,12739.3,13322.0,,,0.0,333,6,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0034,retry_hardened,ok,0,1,11603.6,2478.1,1748.6,1957.2,0.0,333,7,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0035,retry_hardened,admission_wait,0,0,14066.9,13238.9,,,0.0,333,8,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0036,retry_hardened,ok,0,1,12629.7,2541.4,1616.9,1669.4,0.0,333,7,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0037,retry_hardened,admission_wait,0,0,15491.9,8414.9,,,0.0,333,8,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0038,retry_hardened,ok,0,1,13987.3,2245.9,3213.0,3260.6,0.0,333,9,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0039,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,9,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0040,retry_hardened,admission_wait,0,0,15164.6,7807.2,,,0.0,333,9,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0041,retry_hardened,admission_wait,0,0,14832.0,12843.7,,,0.0,333,10,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0042,retry_hardened,admission_wait,0,0,16734.0,9997.3,,,0.0,333,9,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0043,retry_hardened,ok,0,1,15075.1,3891.1,2632.4,2668.5,0.0,333,10,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0044,retry_hardened,admission_wait,0,0,17177.1,10178.4,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0045,retry_hardened,ok,0,1,18354.6,1404.1,3151.6,3262.0,0.0,333,9,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0046,retry_hardened,admission_wait,0,0,20123.7,4072.5,,,0.0,333,10,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0047,retry_hardened,admission_wait,0,0,19009.6,4072.5,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0048,retry_hardened,ok,0,1,18431.4,2112.0,2733.2,2795.5,0.0,333,10,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0049,retry_hardened,ok,0,1,19898.4,7497.7,1747.7,2045.1,0.0,333,10,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0050,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0051,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0052,retry_hardened,admission_wait,0,0,15237.9,7497.7,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0053,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,10,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0054,retry_hardened,admission_wait,0,0,12521.5,13604.1,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0055,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0056,retry_hardened,ok,0,1,11937.7,1636.1,1621.5,1635.6,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0057,retry_hardened,admission_wait,0,0,13554.8,13009.7,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0058,retry_hardened,admission_wait,0,0,13803.1,10847.2,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0059,retry_hardened,ok,0,1,14636.5,2695.0,3037.5,3091.3,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0060,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0061,retry_hardened,admission_wait,0,0,15597.0,8631.8,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0062,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0063,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0064,retry_hardened,admission_wait,0,0,12954.4,13013.2,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0065,retry_hardened,ok,0,1,14422.2,11770.4,3176.6,3414.8,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0066,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0067,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0068,retry_hardened,ok,0,1,9860.1,3890.6,2216.4,2493.4,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0069,retry_hardened,admission_wait,0,0,12347.3,13985.9,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0070,retry_hardened,ok,0,1,13269.9,730.1,2357.6,2368.4,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0071,retry_hardened,admission_wait,0,0,15213.7,10526.2,,,0.0,333,14,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0072,retry_hardened,ok,0,1,14219.3,10010.8,3121.4,3520.1,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0073,retry_hardened,admission_wait,0,0,17413.3,4825.3,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0074,retry_hardened,admission_wait,0,0,18397.4,8237.7,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0075,retry_hardened,admission_wait,0,0,19324.8,6106.2,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0076,retry_hardened,admission_wait,0,0,17973.2,6106.1,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0077,retry_hardened,admission_wait,0,0,20159.4,5803.9,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0078,retry_hardened,admission_wait,0,0,21001.0,3213.6,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0079,retry_hardened,admission_wait,0,0,19141.6,3213.5,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0080,retry_hardened,ok,0,1,17800.6,3213.5,1843.5,1853.4,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0081,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0082,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0083,retry_hardened,admission_wait,0,0,16921.0,6105.1,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0084,retry_hardened,admission_wait,0,0,15209.3,10662.0,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0085,retry_hardened,admission_wait,0,0,13381.0,10662.0,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0086,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0087,retry_hardened,ok,0,1,12603.6,2702.4,2016.1,2212.9,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0088,retry_hardened,admission_wait,0,0,15498.3,8471.6,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0089,retry_hardened,ok,0,1,14453.4,1702.5,2247.7,2534.9,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0090,retry_hardened,admission_wait,0,0,16542.4,9246.7,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0091,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0092,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0093,retry_hardened,admission_wait,0,0,12142.8,14278.6,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0094,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,10,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0095,retry_hardened,ok,0,1,9547.5,2797.2,1862.4,2090.1,0.0,333,11,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0096,retry_hardened,admission_wait,0,0,11569.3,15479.9,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0097,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0098,retry_hardened,ok,0,1,10069.1,2941.4,2336.0,2340.8,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0099,retry_hardened,admission_wait,0,0,12689.9,10147.9,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0100,retry_hardened,ok,0,1,12732.6,2773.9,1985.5,2021.1,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0101,retry_hardened,timeout,0,1,14389.7,13063.9,,,0.0,333,13,,,,,The model provider timed out. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0102,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0103,retry_hardened,ok,0,1,12921.1,3044.8,2269.2,2580.6,0.0,333,11,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0104,retry_hardened,admission_wait,0,0,15280.7,7947.8,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0105,retry_hardened,admission_wait,0,0,13795.8,7947.8,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0106,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0107,retry_hardened,ok,0,1,12440.0,1583.7,1912.8,1917.7,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0108,retry_hardened,admission_wait,0,0,14298.0,9013.4,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0109,retry_hardened,admission_wait,0,0,15641.7,6106.3,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0110,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0111,retry_hardened,ok,0,1,12766.9,6106.3,3408.8,3439.1,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0112,retry_hardened,admission_wait,1,0,28916.1,0.0,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0113,retry_hardened,admission_wait,1,0,27264.0,0.0,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0114,retry_hardened,ok,0,1,11021.2,12015.6,2226.8,2758.3,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0115,retry_hardened,admission_wait,0,0,12782.5,14557.0,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0116,retry_hardened,admission_wait,0,0,11074.5,14557.0,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0117,retry_hardened,ok,0,1,13059.7,740.8,1453.5,1493.2,0.0,333,11,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0118,retry_hardened,admission_wait,0,0,13796.8,8884.8,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0119,retry_hardened,ok,1,1,17823.0,2579.8,1177.5,1225.2,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0000,retry_jitter,ok,0,1,0.0,0.0,2215.1,2305.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0001,retry_jitter,ok,1,1,0.0,0.0,2084.9,2332.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0002,retry_jitter,ok,0,1,0.0,0.0,2716.8,2751.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0003,retry_jitter,ok,0,1,0.0,0.0,2294.6,2678.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0004,retry_jitter,ok,0,1,0.0,0.0,2137.0,2216.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0005,retry_jitter,ok,0,1,0.0,0.0,2534.3,2581.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0006,retry_jitter,ok,0,1,0.0,0.0,1548.0,2219.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0007,retry_jitter,ok,0,1,0.0,0.0,2667.9,3045.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0008,retry_jitter,ok,0,1,0.0,0.0,1792.7,2086.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0009,retry_jitter,ok,0,1,0.0,0.0,2154.7,2386.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0010,retry_jitter,ok,0,1,0.0,0.0,1515.8,1579.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0011,retry_jitter,ok,0,1,0.0,0.0,1954.0,2045.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0012,retry_jitter,ok,0,1,0.0,0.0,1358.0,1427.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0013,retry_jitter,ok,0,1,0.0,0.0,3024.6,3295.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0014,retry_jitter,ok,0,1,0.0,0.0,2682.6,2726.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0015,retry_jitter,ok,0,1,0.0,0.0,3144.7,3443.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0016,retry_jitter,ok,0,1,0.0,0.0,1676.8,1684.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0017,retry_jitter,ok,0,1,0.0,0.0,2929.7,2990.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0018,retry_jitter,ok,0,1,0.0,0.0,1544.5,1549.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0019,retry_jitter,ok,0,1,0.0,0.0,1396.7,1627.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0020,retry_jitter,ok,0,1,0.0,0.0,2232.1,2233.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0021,retry_jitter,ok,0,1,0.0,0.0,2385.2,2445.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0022,retry_jitter,ok,0,1,0.0,0.0,1910.9,2081.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0023,retry_jitter,ok,0,3,0.0,0.0,2191.9,2207.8,914.6,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_jitter-0024,retry_jitter,rate_limited,0,6,0.0,0.0,,,9524.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0025,retry_jitter,rate_limited,1,6,0.0,0.0,,,4863.4,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0026,retry_jitter,rate_limited,0,6,0.0,0.0,,,9847.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0027,retry_jitter,rate_limited,0,6,0.0,0.0,,,5800.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0028,retry_jitter,rate_limited,0,6,0.0,0.0,,,4722.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0029,retry_jitter,rate_limited,1,6,0.0,0.0,,,7546.9,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0030,retry_jitter,rate_limited,0,6,0.0,0.0,,,3913.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0031,retry_jitter,rate_limited,0,6,0.0,0.0,,,5278.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0032,retry_jitter,rate_limited,0,6,0.0,0.0,,,11257.2,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0033,retry_jitter,rate_limited,0,6,0.0,0.0,,,6357.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0034,retry_jitter,rate_limited,0,6,0.0,0.0,,,3893.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0035,retry_jitter,rate_limited,0,6,0.0,0.0,,,5673.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0036,retry_jitter,rate_limited,0,6,0.0,0.0,,,9236.6,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0037,retry_jitter,rate_limited,0,6,0.0,0.0,,,6365.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0038,retry_jitter,rate_limited,0,6,0.0,0.0,,,10533.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0039,retry_jitter,rate_limited,1,6,0.0,0.0,,,11917.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0040,retry_jitter,rate_limited,0,6,0.0,0.0,,,10533.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0041,retry_jitter,rate_limited,0,6,0.0,0.0,,,9458.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0042,retry_jitter,rate_limited,0,6,0.0,0.0,,,10883.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0043,retry_jitter,rate_limited,0,6,0.0,0.0,,,7001.2,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0044,retry_jitter,rate_limited,0,6,0.0,0.0,,,8034.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0045,retry_jitter,rate_limited,0,6,0.0,0.0,,,10582.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0046,retry_jitter,rate_limited,0,6,0.0,0.0,,,7812.6,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0047,retry_jitter,rate_limited,0,6,0.0,0.0,,,6785.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0048,retry_jitter,rate_limited,0,6,0.0,0.0,,,1319.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0049,retry_jitter,rate_limited,0,6,0.0,0.0,,,6983.2,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0050,retry_jitter,rate_limited,1,6,0.0,0.0,,,6460.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0051,retry_jitter,rate_limited,1,6,0.0,0.0,,,4679.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0052,retry_jitter,rate_limited,0,6,0.0,0.0,,,9852.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0053,retry_jitter,rate_limited,1,6,0.0,0.0,,,3543.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0054,retry_jitter,rate_limited,0,6,0.0,0.0,,,5126.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0055,retry_jitter,rate_limited,1,6,0.0,0.0,,,4986.5,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0056,retry_jitter,rate_limited,0,6,0.0,0.0,,,11329.6,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0057,retry_jitter,rate_limited,0,6,0.0,0.0,,,13234.9,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0058,retry_jitter,rate_limited,0,6,0.0,0.0,,,10780.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0059,retry_jitter,rate_limited,0,6,0.0,0.0,,,8633.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0060,retry_jitter,rate_limited,1,6,0.0,0.0,,,10368.4,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0061,retry_jitter,rate_limited,0,6,0.0,0.0,,,12064.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0062,retry_jitter,rate_limited,1,6,0.0,0.0,,,5047.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0063,retry_jitter,rate_limited,1,6,0.0,0.0,,,12477.4,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0064,retry_jitter,rate_limited,0,6,0.0,0.0,,,4036.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0065,retry_jitter,rate_limited,0,6,0.0,0.0,,,5982.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0066,retry_jitter,rate_limited,1,6,0.0,0.0,,,11727.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0067,retry_jitter,rate_limited,1,6,0.0,0.0,,,6918.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0068,retry_jitter,rate_limited,0,6,0.0,0.0,,,5660.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0069,retry_jitter,rate_limited,0,6,0.0,0.0,,,9902.2,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0070,retry_jitter,rate_limited,0,6,0.0,0.0,,,8818.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0071,retry_jitter,rate_limited,0,6,0.0,0.0,,,5225.2,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0072,retry_jitter,rate_limited,0,6,0.0,0.0,,,11735.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0073,retry_jitter,rate_limited,0,6,0.0,0.0,,,9674.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0074,retry_jitter,rate_limited,0,6,0.0,0.0,,,7338.2,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0075,retry_jitter,rate_limited,0,6,0.0,0.0,,,1889.6,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0076,retry_jitter,rate_limited,0,6,0.0,0.0,,,7661.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0077,retry_jitter,rate_limited,0,6,0.0,0.0,,,2449.2,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0078,retry_jitter,rate_limited,0,6,0.0,0.0,,,8391.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0079,retry_jitter,rate_limited,0,6,0.0,0.0,,,6483.6,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0080,retry_jitter,rate_limited,0,6,0.0,0.0,,,10943.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0081,retry_jitter,rate_limited,1,6,0.0,0.0,,,7075.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0082,retry_jitter,rate_limited,1,6,0.0,0.0,,,12472.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0083,retry_jitter,rate_limited,0,6,0.0,0.0,,,11080.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0084,retry_jitter,rate_limited,0,6,0.0,0.0,,,7173.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0085,retry_jitter,rate_limited,0,6,0.0,0.0,,,5337.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0086,retry_jitter,rate_limited,1,6,0.0,0.0,,,4952.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0087,retry_jitter,rate_limited,0,6,0.0,0.0,,,3481.4,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0088,retry_jitter,rate_limited,0,6,0.0,0.0,,,5282.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0089,retry_jitter,rate_limited,0,6,0.0,0.0,,,9169.5,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0090,retry_jitter,rate_limited,0,6,0.0,0.0,,,13518.6,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0091,retry_jitter,rate_limited,1,6,0.0,0.0,,,6127.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0092,retry_jitter,rate_limited,1,6,0.0,0.0,,,3337.5,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0093,retry_jitter,rate_limited,0,6,0.0,0.0,,,9626.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0094,retry_jitter,rate_limited,1,6,0.0,0.0,,,9371.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0095,retry_jitter,rate_limited,0,6,0.0,0.0,,,7543.7,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0096,retry_jitter,rate_limited,0,6,0.0,0.0,,,6258.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0097,retry_jitter,rate_limited,1,6,0.0,0.0,,,4004.6,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0098,retry_jitter,rate_limited,0,6,0.0,0.0,,,6549.4,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0099,retry_jitter,rate_limited,0,6,0.0,0.0,,,8311.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0100,retry_jitter,rate_limited,0,6,0.0,0.0,,,6728.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0101,retry_jitter,rate_limited,0,6,0.0,0.0,,,6500.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0102,retry_jitter,rate_limited,1,6,0.0,0.0,,,11734.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0103,retry_jitter,rate_limited,0,6,0.0,0.0,,,4915.2,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0104,retry_jitter,rate_limited,0,6,0.0,0.0,,,12578.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0105,retry_jitter,rate_limited,0,6,0.0,0.0,,,4251.3,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0106,retry_jitter,rate_limited,1,6,0.0,0.0,,,5627.4,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0107,retry_jitter,rate_limited,0,6,0.0,0.0,,,10097.9,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0108,retry_jitter,rate_limited,0,6,0.0,0.0,,,9878.2,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0109,retry_jitter,rate_limited,0,6,0.0,0.0,,,11221.5,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0110,retry_jitter,rate_limited,1,6,0.0,0.0,,,9048.8,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0111,retry_jitter,rate_limited,0,6,0.0,0.0,,,8859.4,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0112,retry_jitter,rate_limited,1,6,0.0,0.0,,,9725.5,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0113,retry_jitter,rate_limited,1,6,0.0,0.0,,,4313.5,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0114,retry_jitter,rate_limited,0,6,0.0,0.0,,,5663.5,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0115,retry_jitter,rate_limited,0,6,0.0,0.0,,,8783.5,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0116,retry_jitter,rate_limited,0,6,0.0,0.0,,,8188.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0117,retry_jitter,rate_limited,0,6,0.0,0.0,,,8960.1,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0118,retry_jitter,rate_limited,0,6,0.0,0.0,,,8756.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_jitter-0119,retry_jitter,rate_limited,1,6,0.0,0.0,,,10383.4,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0000,retry_naive_immediate,ok,0,1,0.0,0.0,2240.1,2329.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0001,retry_naive_immediate,ok,1,1,0.0,0.0,2084.2,2332.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0002,retry_naive_immediate,ok,0,1,0.0,0.0,2715.8,2751.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0003,retry_naive_immediate,ok,0,1,0.0,0.0,2293.6,2678.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0004,retry_naive_immediate,ok,0,1,0.0,0.0,2136.5,2216.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0005,retry_naive_immediate,ok,0,1,0.0,0.0,2534.4,2581.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0006,retry_naive_immediate,ok,0,1,0.0,0.0,1549.4,2220.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0007,retry_naive_immediate,ok,0,1,0.0,0.0,2668.5,3045.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0008,retry_naive_immediate,ok,0,1,0.0,0.0,1793.8,2087.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0009,retry_naive_immediate,ok,0,1,0.0,0.0,2152.8,2384.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0010,retry_naive_immediate,ok,0,1,0.0,0.0,1515.6,1580.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0011,retry_naive_immediate,ok,0,1,0.0,0.0,1954.2,2046.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0012,retry_naive_immediate,ok,0,1,0.0,0.0,1358.0,1427.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0013,retry_naive_immediate,ok,0,1,0.0,0.0,3024.4,3294.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0014,retry_naive_immediate,ok,0,1,0.0,0.0,2681.4,2724.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0015,retry_naive_immediate,ok,0,1,0.0,0.0,3145.0,3443.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0016,retry_naive_immediate,ok,0,1,0.0,0.0,1676.5,1684.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0017,retry_naive_immediate,ok,0,1,0.0,0.0,2929.4,2990.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0018,retry_naive_immediate,ok,0,1,0.0,0.0,1545.0,1548.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0019,retry_naive_immediate,ok,0,1,0.0,0.0,1396.6,1627.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0020,retry_naive_immediate,ok,0,1,0.0,0.0,2231.1,2233.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0021,retry_naive_immediate,ok,0,1,0.0,0.0,2385.7,2443.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0022,retry_naive_immediate,ok,0,1,0.0,0.0,1910.6,2080.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate-0023,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0024,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0025,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0026,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0027,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0028,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0029,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0030,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0031,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0032,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0033,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0034,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0035,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0036,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0037,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0038,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0039,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0040,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0041,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0042,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0043,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0044,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0045,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0046,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0047,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0048,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0049,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0050,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0051,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0052,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0053,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0054,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0055,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0056,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0057,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0058,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0059,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0060,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0061,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0062,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0063,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0064,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0065,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0066,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0067,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0068,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0069,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0070,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0071,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0072,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0073,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0074,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0075,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0076,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0077,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0078,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0079,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0080,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0081,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0082,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0083,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0084,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0085,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0086,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0087,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0088,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0089,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0090,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0091,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0092,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0093,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0094,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0095,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0096,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0097,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0098,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0099,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0100,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0101,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0102,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0103,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0104,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0105,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0106,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0107,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0108,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0109,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0110,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0111,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0112,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0113,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0114,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0115,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0116,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0117,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0118,retry_naive_immediate,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate-0119,retry_naive_immediate,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0000,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2245.0,2334.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0001,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,2085.2,2333.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0002,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2716.3,2751.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0003,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2293.8,2678.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0004,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2137.9,2217.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0005,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2534.9,2581.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0006,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1548.6,2220.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0007,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2668.5,3047.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0008,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1794.0,2087.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0009,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2152.4,2383.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0010,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1515.4,1579.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0011,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1953.5,2046.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0012,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1358.0,1427.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0013,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,3024.9,3294.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0014,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2681.8,2724.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0015,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,3146.5,3443.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0016,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1678.4,1686.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0017,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2929.7,2990.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0018,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1545.0,1548.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0019,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1397.1,1627.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0020,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2231.2,2233.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0021,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2385.7,2443.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0022,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1910.2,2081.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0023,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0024,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0025,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,2321.0,2343.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0026,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0027,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0028,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,3212.7,3259.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0029,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0030,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,3337.5,3453.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0031,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0032,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0033,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0034,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0035,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0036,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0037,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,3176.4,3414.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0038,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0039,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,1951.6,1962.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0040,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0041,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0042,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0043,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0044,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0045,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2269.3,2580.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0046,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2026.1,2030.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0047,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0048,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0049,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0050,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,2226.3,2756.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0051,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0052,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0053,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,1701.7,1738.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0054,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0055,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0056,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,3273.9,3498.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0057,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0058,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0059,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0060,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0061,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1323.3,1388.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0062,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0063,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,2351.6,2580.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0064,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0065,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0066,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0067,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,1903.2,1997.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0068,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1822.0,1984.9,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0069,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0070,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0071,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2952.2,3007.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0072,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0073,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0074,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1660.1,2119.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0075,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0076,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0077,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2029.7,2104.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0078,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1350.4,1396.6,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0079,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0080,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0081,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0082,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,2772.6,2791.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0083,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2573.6,2678.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0084,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0085,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0086,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0087,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0088,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1674.2,1738.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0089,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0090,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0091,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,1167.3,1410.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0092,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0093,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,3433.0,3515.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0094,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,1874.8,2022.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0095,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0096,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0097,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0098,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0099,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0100,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2047.3,2173.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0101,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1825.1,1960.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0102,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0103,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0104,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0105,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2428.1,2549.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0106,retry_naive_immediate_nocount,ok,1,1,0.0,0.0,3110.9,3566.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0107,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0108,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0109,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0110,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0111,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2303.7,2488.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0112,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0113,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0114,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,2480.1,2491.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0115,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1781.2,1929.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0116,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0117,retry_naive_immediate_nocount,rate_limited,0,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0118,retry_naive_immediate_nocount,ok,0,1,0.0,0.0,1985.7,2056.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_naive_immediate_nocount-0119,retry_naive_immediate_nocount,rate_limited,1,6,0.0,0.0,,,0.0,333,0,,,,,The model provider is rate-limiting requests. Please try again shortly.,lt-retry2,1

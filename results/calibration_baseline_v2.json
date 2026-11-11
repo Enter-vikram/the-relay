@@ -1,0 +1,103 @@
+{
+  "finish_reasons": {
+    "stop": 5
+  },
+  "latency_ms_ok_rows": {
+    "after_first_content": {
+      "max": 313.0,
+      "mean": 121.8,
+      "min": 0.0,
+      "n": 5,
+      "p50": 15.0,
+      "p95": 306.6
+    },
+    "content_ttft": {
+      "max": 2625.0,
+      "mean": 2197.0,
+      "min": 1469.0,
+      "n": 5,
+      "p50": 2359.0,
+      "p95": 2615.6
+    },
+    "first_reasoning": {
+      "max": 2281.0,
+      "mean": 1540.6,
+      "min": 1140.0,
+      "n": 5,
+      "p50": 1360.0,
+      "p95": 2156.2
+    },
+    "total": {
+      "max": 2891.0,
+      "mean": 2318.8,
+      "min": 1484.0,
+      "n": 5,
+      "p50": 2359.0,
+      "p95": 2837.8
+    }
+  },
+  "not_observable_from_headers": [
+    "requests per minute (RPM)",
+    "tokens per day (TPD)",
+    "requests in flight at once",
+    "behaviour on 429 and recovery time (needs a 429)"
+  ],
+  "outcomes": {
+    "ok": 5
+  },
+  "requests_per_day": {
+    "consistent_with_continuous_daily_refill": true,
+    "expected_if_limit_is_per_day": 86.4,
+    "inference": "reset-requests == (limit - remaining) * 86400/limit seconds => a daily budget that refills continuously",
+    "n_rows_used": 5,
+    "observed_limit_header": [
+      1000
+    ],
+    "seconds_per_request_refill": [
+      86.4,
+      86.4,
+      86.4,
+      86.4,
+      86.4
+    ]
+  },
+  "rows": 5,
+  "source_file": "/home/claude/enter-vikram/the-relay/results/baseline_v2.csv",
+  "tokens_ok_rows": {
+    "tokens_in": {
+      "max": 88.0,
+      "mean": 83.2,
+      "min": 80.0,
+      "n": 5,
+      "p50": 83.0,
+      "p95": 87.2
+    },
+    "tokens_out_incl_reasoning": {
+      "max": 530.0,
+      "mean": 300.2,
+      "min": 123.0,
+      "n": 5,
+      "p50": 269.0,
+      "p95": 501.2
+    }
+  },
+  "tokens_per_minute": {
+    "consistent_with_continuous_per_minute_refill": true,
+    "expected_if_limit_is_per_minute": 133.3,
+    "implied_refill_tokens_per_s": [
+      133.4,
+      133.3,
+      133.3,
+      133.3,
+      133.4
+    ],
+    "inference": "(limit - remaining) / reset-tokens ~= limit/60 tokens/s => a per-minute token bucket refilling continuously",
+    "max_requests_per_min_by_tpm_at_that_size": 20.9,
+    "n_rows_used": 5,
+    "observed_limit_header": [
+      8000
+    ],
+    "tokens_per_request_mean_ok_rows": 383.4
+  },
+  "warning": "n<30: percentiles are a sanity check, not a distribution; do not fit stand-in latency distributions to this sample"
+}

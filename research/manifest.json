@@ -1,0 +1,60 @@
+{
+  "papers": {
+    "attention": {
+      "arxiv_id": "1706.03762",
+      "bytes": 2215244,
+      "downloaded_utc": "2026-11-11T17:36:55+00:00",
+      "filename": "attention-is-all-you-need-v7.pdf",
+      "final_url": "https://arxiv.org/pdf/1706.03762v7",
+      "http_status": 200,
+      "key": "attention",
+      "note": "",
+      "pages": 15,
+      "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+      "source_url": "https://arxiv.org/pdf/1706.03762v7",
+      "stamp_on_page1": "arXiv:1706.03762v7",
+      "title": "Attention Is All You Need",
+      "title_word_coverage": 1.0,
+      "verified_utc": "2026-11-11T17:36:55+00:00",
+      "version": 7
+    },
+    "dynamic-chunking": {
+      "arxiv_id": "2507.07955",
+      "bytes": 1375282,
+      "downloaded_utc": "2026-11-11T17:38:19+00:00",
+      "filename": "dynamic-chunking-v2.pdf",
+      "final_url": "https://arxiv.org/pdf/2507.07955v2",
+      "http_status": 200,
+      "key": "dynamic-chunking",
+      "note": "",
+      "pages": 39,
+      "sha256": "04a2b32e6e82853cfc23c5db132750874a86cde99219ec6f664128f4aa83122f",
+      "source_url": "https://arxiv.org/pdf/2507.07955v2",
+      "stamp_on_page1": "arXiv:2507.07955v2",
+      "title": "Dynamic Chunking for End-to-End Hierarchical Sequence Modeling",
+      "title_word_coverage": 1.0,
+      "verified_utc": "2026-11-11T17:38:19+00:00",
+      "version": 2
+    },
+    "moshi": {
+      "arxiv_id": "2410.00037",
+      "bytes": 4694312,
+      "downloaded_utc": "2026-11-11T17:38:12+00:00",
+      "filename": "moshi-v1.pdf",
+      "final_url": "https://arxiv.org/pdf/2410.00037v1",
+      "http_status": 200,
+      "key": "moshi",
+      "note": "",
+      "pages": 66,
+      "sha256": "a687144cc77bea86b0c60ae800ccb1d3e0816033fa5c7960388fe29a0dbfcfac",
+      "source_url": "https://arxiv.org/pdf/2410.00037v1",
+      "stamp_on_page1": "arXiv:2410.00037v1",
+      "title": "Moshi: a speech-text foundation model for real-time dialogue",
+      "title_word_coverage": 1.0,
+      "verified_utc": "2026-11-11T17:38:12+00:00",
+      "version": 1
+    }
+  },
+  "pymupdf_version": "2.1",
+  "updated_utc": "2026-11-11T17:38:19+00:00"
+}

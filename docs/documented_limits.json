@@ -1,0 +1,11 @@
+{
+  "_comment": "DOCUMENTED values only (not measured). Read from Groq's public docs on 2026-11-10. Re-check before submitting; plans change.",
+  "fetched": "2026-11-10",
+  "sources": ["https://console.groq.com/docs/rate-limits", "https://console.groq.com/docs/models"],
+  "model": "openai/gpt-oss-20b",
+  "rate_limits_page": {"plan_wording": "base limits for the Developer plan", "rpm": 30, "rpd": 1000, "tpm": 8000, "tpd": 200000},
+  "models_page": {"rpm": 1000, "tpm": 250000, "note": "disagrees with the rate-limits page; plan not stated; treat as unreliable for this account"},
+  "pricing_usd_per_1M_tokens": {"input": 0.075, "output": 0.30, "source": "console.groq.com/docs/models, 2026-11-10"},
+  "header_semantics": "x-ratelimit-*-requests describe the DAILY request budget; x-ratelimit-*-tokens describe the PER-MINUTE token budget; retry-after is sent on 429 only",
+  "account_limits_page": "https://console.groq.com/settings/limits (authoritative for this account; check it and note the date)"
+}

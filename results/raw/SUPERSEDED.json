@@ -1,0 +1,7 @@
+{
+  "lt-main__retry_naive_immediate": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2",
+  "lt-main__retry_fixed": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2",
+  "lt-main__retry_exponential": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2",
+  "lt-main__retry_jitter": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2",
+  "lt-main__retry_hardened": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2"
+}

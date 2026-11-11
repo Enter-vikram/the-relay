@@ -1,0 +1,5 @@
+# OPTIONAL: embedding retrieval (hybrid mode). NOT installed by setup.bat.
+# Model: sentence-transformers/all-MiniLM-L6-v2 (Apache-2.0, ~90 MB download on first use).
+# Installing pulls PyTorch (several hundred MB). Skip it and the benchmark will
+# report hybrid retrieval as "not measured" rather than faking it.
+sentence-transformers>=2.7

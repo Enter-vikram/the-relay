@@ -1,0 +1,121 @@
+request_id,scenario,final_reason,priority,attempts,queue_wait_ms,limiter_wait_ms,model_ttft_ms,model_total_ms,retry_delay_ms,est_tokens_in,queue_len_at_submit,stage_retrieval_ms,stage_verification_ms,stage_generation_ms,model_calls,user_message,run_id,seed
+lt-retry2-retry_hardened-0000,retry_hardened,ok,0,1,0.0,0.0,2208.3,2297.0,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0001,retry_hardened,ok,1,1,0.0,0.0,2084.7,2332.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0002,retry_hardened,ok,0,1,0.0,0.0,2715.9,2751.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0003,retry_hardened,ok,0,1,0.0,0.0,2294.9,2679.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0004,retry_hardened,ok,0,1,0.0,0.0,2136.7,2215.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0005,retry_hardened,ok,0,1,0.0,0.0,2534.3,2581.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0006,retry_hardened,ok,0,1,0.0,0.0,1548.4,2220.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0007,retry_hardened,ok,0,1,0.0,0.0,2669.1,3046.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0008,retry_hardened,ok,0,1,0.0,0.0,1794.1,2087.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0009,retry_hardened,ok,0,1,0.0,0.0,2152.1,2383.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0010,retry_hardened,ok,0,1,0.0,0.0,1515.6,1580.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0011,retry_hardened,ok,0,1,0.0,0.0,1954.5,2046.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0012,retry_hardened,ok,0,1,0.0,0.0,1357.9,1426.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0013,retry_hardened,ok,0,1,0.0,0.0,3025.5,3295.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0014,retry_hardened,ok,0,1,0.0,0.0,2681.0,2725.4,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0015,retry_hardened,ok,0,1,0.0,0.0,3145.6,3443.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0016,retry_hardened,ok,0,1,0.0,0.0,1676.4,1684.3,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0017,retry_hardened,ok,0,1,0.0,0.0,2930.2,2990.2,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0018,retry_hardened,ok,0,1,0.0,2805.0,1460.3,1462.8,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0019,retry_hardened,admission_wait,0,0,0.0,24653.3,,,0.0,333,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0020,retry_hardened,ok,0,1,0.0,8012.0,2107.3,2109.7,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0021,retry_hardened,admission_wait,0,0,0.0,25879.6,,,0.0,333,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0022,retry_hardened,ok,0,1,0.0,569.1,1249.8,1456.5,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0023,retry_hardened,admission_wait,0,0,947.8,26842.9,,,0.0,333,0,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0024,retry_hardened,ok,0,1,3981.4,1480.6,2253.8,2308.1,0.0,333,0,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0025,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,1,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0026,retry_hardened,ok,0,1,4913.5,3139.3,1805.0,1966.4,0.0,333,2,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0027,retry_hardened,ok,0,1,8376.3,2640.8,1990.2,2060.5,0.0,333,2,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0028,retry_hardened,admission_wait,0,0,10854.1,13397.7,,,0.0,333,3,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0029,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,4,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0030,retry_hardened,ok,0,1,8569.0,2730.3,2295.4,2415.0,0.0,333,4,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0031,retry_hardened,admission_wait,0,0,11118.7,13613.4,,,0.0,333,5,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0032,retry_hardened,ok,0,1,10727.0,1583.7,2322.2,2344.7,0.0,333,6,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0033,retry_hardened,admission_wait,0,0,12739.3,13322.0,,,0.0,333,6,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0034,retry_hardened,ok,0,1,11603.6,2478.1,1748.6,1957.2,0.0,333,7,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0035,retry_hardened,admission_wait,0,0,14066.9,13238.9,,,0.0,333,8,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0036,retry_hardened,ok,0,1,12629.7,2541.4,1616.9,1669.4,0.0,333,7,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0037,retry_hardened,admission_wait,0,0,15491.9,8414.9,,,0.0,333,8,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0038,retry_hardened,ok,0,1,13987.3,2245.9,3213.0,3260.6,0.0,333,9,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0039,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,9,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0040,retry_hardened,admission_wait,0,0,15164.6,7807.2,,,0.0,333,9,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0041,retry_hardened,admission_wait,0,0,14832.0,12843.7,,,0.0,333,10,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0042,retry_hardened,admission_wait,0,0,16734.0,9997.3,,,0.0,333,9,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0043,retry_hardened,ok,0,1,15075.1,3891.1,2632.4,2668.5,0.0,333,10,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0044,retry_hardened,admission_wait,0,0,17177.1,10178.4,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0045,retry_hardened,ok,0,1,18354.6,1404.1,3151.6,3262.0,0.0,333,9,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0046,retry_hardened,admission_wait,0,0,20123.7,4072.5,,,0.0,333,10,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0047,retry_hardened,admission_wait,0,0,19009.6,4072.5,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0048,retry_hardened,ok,0,1,18431.4,2112.0,2733.2,2795.5,0.0,333,10,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0049,retry_hardened,ok,0,1,19898.4,7497.7,1747.7,2045.1,0.0,333,10,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0050,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0051,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0052,retry_hardened,admission_wait,0,0,15237.9,7497.7,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0053,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,10,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0054,retry_hardened,admission_wait,0,0,12521.5,13604.1,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0055,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0056,retry_hardened,ok,0,1,11937.7,1636.1,1621.5,1635.6,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0057,retry_hardened,admission_wait,0,0,13554.8,13009.7,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0058,retry_hardened,admission_wait,0,0,13803.1,10847.2,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0059,retry_hardened,ok,0,1,14636.5,2695.0,3037.5,3091.3,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0060,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0061,retry_hardened,admission_wait,0,0,15597.0,8631.8,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0062,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0063,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0064,retry_hardened,admission_wait,0,0,12954.4,13013.2,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0065,retry_hardened,ok,0,1,14422.2,11770.4,3176.6,3414.8,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0066,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0067,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0068,retry_hardened,ok,0,1,9860.1,3890.6,2216.4,2493.4,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0069,retry_hardened,admission_wait,0,0,12347.3,13985.9,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0070,retry_hardened,ok,0,1,13269.9,730.1,2357.6,2368.4,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0071,retry_hardened,admission_wait,0,0,15213.7,10526.2,,,0.0,333,14,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0072,retry_hardened,ok,0,1,14219.3,10010.8,3121.4,3520.1,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0073,retry_hardened,admission_wait,0,0,17413.3,4825.3,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0074,retry_hardened,admission_wait,0,0,18397.4,8237.7,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0075,retry_hardened,admission_wait,0,0,19324.8,6106.2,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0076,retry_hardened,admission_wait,0,0,17973.2,6106.1,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0077,retry_hardened,admission_wait,0,0,20159.4,5803.9,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0078,retry_hardened,admission_wait,0,0,21001.0,3213.6,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0079,retry_hardened,admission_wait,0,0,19141.6,3213.5,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0080,retry_hardened,ok,0,1,17800.6,3213.5,1843.5,1853.4,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0081,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0082,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0083,retry_hardened,admission_wait,0,0,16921.0,6105.1,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0084,retry_hardened,admission_wait,0,0,15209.3,10662.0,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0085,retry_hardened,admission_wait,0,0,13381.0,10662.0,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0086,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0087,retry_hardened,ok,0,1,12603.6,2702.4,2016.1,2212.9,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0088,retry_hardened,admission_wait,0,0,15498.3,8471.6,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0089,retry_hardened,ok,0,1,14453.4,1702.5,2247.7,2534.9,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0090,retry_hardened,admission_wait,0,0,16542.4,9246.7,,,0.0,333,13,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0091,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0092,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0093,retry_hardened,admission_wait,0,0,12142.8,14278.6,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0094,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,10,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0095,retry_hardened,ok,0,1,9547.5,2797.2,1862.4,2090.1,0.0,333,11,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0096,retry_hardened,admission_wait,0,0,11569.3,15479.9,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0097,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0098,retry_hardened,ok,0,1,10069.1,2941.4,2336.0,2340.8,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0099,retry_hardened,admission_wait,0,0,12689.9,10147.9,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0100,retry_hardened,ok,0,1,12732.6,2773.9,1985.5,2021.1,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0101,retry_hardened,timeout,0,1,14389.7,13063.9,,,0.0,333,13,,,,,The model provider timed out. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0102,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,11,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0103,retry_hardened,ok,0,1,12921.1,3044.8,2269.2,2580.6,0.0,333,11,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0104,retry_hardened,admission_wait,0,0,15280.7,7947.8,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0105,retry_hardened,admission_wait,0,0,13795.8,7947.8,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0106,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,12,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0107,retry_hardened,ok,0,1,12440.0,1583.7,1912.8,1917.7,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0108,retry_hardened,admission_wait,0,0,14298.0,9013.4,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0109,retry_hardened,admission_wait,0,0,15641.7,6106.3,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0110,retry_hardened,queue_timeout,1,0,0.0,0.0,,,0.0,333,13,,,,,Your question waited too long in line and was dropped. Please try again.,lt-retry2,1
+lt-retry2-retry_hardened-0111,retry_hardened,ok,0,1,12766.9,6106.3,3408.8,3439.1,0.0,333,12,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0112,retry_hardened,admission_wait,1,0,28916.1,0.0,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0113,retry_hardened,admission_wait,1,0,27264.0,0.0,,,0.0,333,12,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0114,retry_hardened,ok,0,1,11021.2,12015.6,2226.8,2758.3,0.0,333,13,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0115,retry_hardened,admission_wait,0,0,12782.5,14557.0,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0116,retry_hardened,admission_wait,0,0,11074.5,14557.0,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0117,retry_hardened,ok,0,1,13059.7,740.8,1453.5,1493.2,0.0,333,11,,,,,,lt-retry2,1
+lt-retry2-retry_hardened-0118,retry_hardened,admission_wait,0,0,13796.8,8884.8,,,0.0,333,11,,,,,The service is at capacity and cannot answer within your time limit. Please try again shortly.,lt-retry2,1
+lt-retry2-retry_hardened-0119,retry_hardened,ok,1,1,17823.0,2579.8,1177.5,1225.2,0.0,333,12,,,,,,lt-retry2,1

@@ -1,0 +1,19 @@
+{
+  "chunk_tokens": 600,
+  "chunking_id": "c600o100",
+  "chunks_sha256": "d1ccfd9b50bc79121937e9872311260c24ab1b4798fe0f0946a56069c3fc741f",
+  "n_chunks": 206,
+  "overlap_tokens": 100,
+  "per_paper": {
+    "attention": 28,
+    "dynamic-chunking": 85,
+    "moshi": 93
+  },
+  "source_pdf_sha256": {
+    "attention": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "dynamic-chunking": "04a2b32e6e82853cfc23c5db132750874a86cde99219ec6f664128f4aa83122f",
+    "moshi": "a687144cc77bea86b0c60ae800ccb1d3e0816033fa5c7960388fe29a0dbfcfac"
+  },
+  "tokens_max": 600,
+  "tokens_mean": 429.8
+}

@@ -1,0 +1,471 @@
+{
+  "table_2a": [
+    {
+      "scenario": "real-baseline-v2",
+      "source": "real",
+      "requests": 5,
+      "duration_s": "24",
+      "offered_per_min": "13.5",
+      "ttft": [
+        "2359",
+        "2616",
+        "2623"
+      ],
+      "total": [
+        "2359",
+        "2838",
+        "2880"
+      ],
+      "n_ok": 5,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "steady",
+      "source": "stand-in",
+      "requests": 28,
+      "duration_s": "462",
+      "offered_per_min": "3.6",
+      "ttft": [
+        "2005",
+        "2827",
+        "2940"
+      ],
+      "total": [
+        "2123",
+        "3031",
+        "3215"
+      ],
+      "n_ok": 28,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "burst",
+      "source": "stand-in",
+      "requests": 32,
+      "duration_s": "331",
+      "offered_per_min": "5.8",
+      "ttft": [
+        "2532",
+        "14699",
+        "22357"
+      ],
+      "total": [
+        "2574",
+        "14962",
+        "22576"
+      ],
+      "n_ok": 17,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "overload",
+      "source": "stand-in",
+      "requests": 60,
+      "duration_s": "319",
+      "offered_per_min": "12.2",
+      "ttft": [
+        "7473",
+        "24442",
+        "28470"
+      ],
+      "total": [
+        "7528",
+        "24505",
+        "28522"
+      ],
+      "n_ok": 29,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "limit_halved",
+      "source": "stand-in",
+      "requests": 21,
+      "duration_s": "340",
+      "offered_per_min": "3.7",
+      "ttft": [
+        "2565",
+        "19408",
+        "24130"
+      ],
+      "total": [
+        "2600",
+        "19504",
+        "24202"
+      ],
+      "n_ok": 17,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "daily_exhausted",
+      "source": "stand-in",
+      "requests": 30,
+      "duration_s": "290",
+      "offered_per_min": "6.2",
+      "ttft": [
+        "1995",
+        "2541",
+        "2560"
+      ],
+      "total": [
+        "2170",
+        "2725",
+        "2848"
+      ],
+      "n_ok": 12,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "retry_exponential",
+      "source": "stand-in",
+      "requests": 120,
+      "duration_s": "194",
+      "offered_per_min": "40.3",
+      "ttft": [
+        "2178",
+        "3128",
+        "4665"
+      ],
+      "total": [
+        "2312",
+        "3422",
+        "4758"
+      ],
+      "n_ok": 24,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "retry_fixed",
+      "source": "stand-in",
+      "requests": 120,
+      "duration_s": "184",
+      "offered_per_min": "40.3",
+      "ttft": [
+        "2176",
+        "3128",
+        "5822"
+      ],
+      "total": [
+        "2310",
+        "3421",
+        "5913"
+      ],
+      "n_ok": 24,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "retry_hardened",
+      "source": "stand-in",
+      "requests": 120,
+      "duration_s": "200",
+      "offered_per_min": "40.3",
+      "ttft": [
+        "14209",
+        "26314",
+        "29260"
+      ],
+      "total": [
+        "14437",
+        "26780",
+        "29528"
+      ],
+      "n_ok": 51,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "retry_jitter",
+      "source": "stand-in",
+      "requests": 120,
+      "duration_s": "189",
+      "offered_per_min": "40.3",
+      "ttft": [
+        "2185",
+        "3099",
+        "3137"
+      ],
+      "total": [
+        "2319",
+        "3271",
+        "3410"
+      ],
+      "n_ok": 24,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "retry_naive_immediate",
+      "source": "stand-in",
+      "requests": 120,
+      "duration_s": "179",
+      "offered_per_min": "40.3",
+      "ttft": [
+        "2153",
+        "3015",
+        "3118"
+      ],
+      "total": [
+        "2330",
+        "3270",
+        "3411"
+      ],
+      "n_ok": 23,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "retry_naive_immediate_nocount",
+      "source": "stand-in",
+      "requests": 120,
+      "duration_s": "179",
+      "offered_per_min": "40.3",
+      "ttft": [
+        "2152",
+        "3231",
+        "3381"
+      ],
+      "total": [
+        "2333",
+        "3467",
+        "3539"
+      ],
+      "n_ok": 55,
+      "p99_unstable": true
+    }
+  ],
+  "table_2b": [
+    {
+      "scenario": "real-baseline-v2",
+      "source": "real",
+      "n": 5,
+      "ok": "100.0%",
+      "rate_limited": "0.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "0.00",
+      "peak_queue": "not measured",
+      "tokens_per_answer": "383",
+      "cost_per_1000": "$0.10 (hypothetical; free tier billed $0)"
+    },
+    {
+      "scenario": "steady",
+      "source": "stand-in",
+      "n": 28,
+      "ok": "100.0%",
+      "rate_limited": "0.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "0.00",
+      "peak_queue": "0",
+      "tokens_per_answer": "1545",
+      "cost_per_1000": "$0.17 (simulated)"
+    },
+    {
+      "scenario": "burst",
+      "source": "stand-in",
+      "n": 32,
+      "ok": "53.1%",
+      "rate_limited": "46.9%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "0.00",
+      "peak_queue": "13",
+      "tokens_per_answer": "1545",
+      "cost_per_1000": "$0.17 (simulated)"
+    },
+    {
+      "scenario": "overload",
+      "source": "stand-in",
+      "n": 60,
+      "ok": "48.3%",
+      "rate_limited": "51.7%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "0.00",
+      "peak_queue": "1",
+      "tokens_per_answer": "1568",
+      "cost_per_1000": "$0.18 (simulated)"
+    },
+    {
+      "scenario": "limit_halved",
+      "source": "stand-in",
+      "n": 21,
+      "ok": "81.0%",
+      "rate_limited": "19.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "0.43",
+      "peak_queue": "0",
+      "tokens_per_answer": "1522",
+      "cost_per_1000": "$0.16 (simulated)"
+    },
+    {
+      "scenario": "daily_exhausted",
+      "source": "stand-in",
+      "n": 30,
+      "ok": "40.0%",
+      "rate_limited": "60.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "0.00",
+      "peak_queue": "0",
+      "tokens_per_answer": "1561",
+      "cost_per_1000": "$0.18 (simulated)"
+    },
+    {
+      "scenario": "retry_exponential",
+      "source": "stand-in",
+      "n": 120,
+      "ok": "20.0%",
+      "rate_limited": "80.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "4.02",
+      "peak_queue": "0",
+      "tokens_per_answer": "563",
+      "cost_per_1000": "$0.10 (simulated)"
+    },
+    {
+      "scenario": "retry_fixed",
+      "source": "stand-in",
+      "n": 120,
+      "ok": "20.0%",
+      "rate_limited": "80.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "4.03",
+      "peak_queue": "0",
+      "tokens_per_answer": "563",
+      "cost_per_1000": "$0.10 (simulated)"
+    },
+    {
+      "scenario": "retry_hardened",
+      "source": "stand-in",
+      "n": 120,
+      "ok": "42.5%",
+      "rate_limited": "38.3%",
+      "timeout": "19.2%",
+      "error": "0.0%",
+      "retries_per_request": "0.00",
+      "peak_queue": "14",
+      "tokens_per_answer": "589",
+      "cost_per_1000": "$0.11 (simulated)"
+    },
+    {
+      "scenario": "retry_jitter",
+      "source": "stand-in",
+      "n": 120,
+      "ok": "20.0%",
+      "rate_limited": "80.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "4.02",
+      "peak_queue": "0",
+      "tokens_per_answer": "555",
+      "cost_per_1000": "$0.10 (simulated)"
+    },
+    {
+      "scenario": "retry_naive_immediate",
+      "source": "stand-in",
+      "n": 120,
+      "ok": "19.2%",
+      "rate_limited": "80.8%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "4.04",
+      "peak_queue": "0",
+      "tokens_per_answer": "549",
+      "cost_per_1000": "$0.10 (simulated)"
+    },
+    {
+      "scenario": "retry_naive_immediate_nocount",
+      "source": "stand-in",
+      "n": 120,
+      "ok": "45.8%",
+      "rate_limited": "54.2%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "2.71",
+      "peak_queue": "0",
+      "tokens_per_answer": "580",
+      "cost_per_1000": "$0.11 (simulated)"
+    }
+  ],
+  "table_3": [],
+  "retry": [
+    {
+      "scenario": "retry_exponential",
+      "n": 120,
+      "ok": "20.0%",
+      "rate_limited": "80.0%",
+      "timeout": "0.0%",
+      "provider_attempts_per_request": "5.02",
+      "attempts_per_ok_answer": "25.1",
+      "ok_total_p50_ms": "2312"
+    },
+    {
+      "scenario": "retry_fixed",
+      "n": 120,
+      "ok": "20.0%",
+      "rate_limited": "80.0%",
+      "timeout": "0.0%",
+      "provider_attempts_per_request": "5.03",
+      "attempts_per_ok_answer": "25.1",
+      "ok_total_p50_ms": "2310"
+    },
+    {
+      "scenario": "retry_hardened",
+      "n": 120,
+      "ok": "42.5%",
+      "rate_limited": "38.3%",
+      "timeout": "19.2%",
+      "provider_attempts_per_request": "0.43",
+      "attempts_per_ok_answer": "1.0",
+      "ok_total_p50_ms": "14437"
+    },
+    {
+      "scenario": "retry_jitter",
+      "n": 120,
+      "ok": "20.0%",
+      "rate_limited": "80.0%",
+      "timeout": "0.0%",
+      "provider_attempts_per_request": "5.02",
+      "attempts_per_ok_answer": "25.1",
+      "ok_total_p50_ms": "2319"
+    },
+    {
+      "scenario": "retry_naive_immediate",
+      "n": 120,
+      "ok": "19.2%",
+      "rate_limited": "80.8%",
+      "timeout": "0.0%",
+      "provider_attempts_per_request": "5.04",
+      "attempts_per_ok_answer": "26.3",
+      "ok_total_p50_ms": "2330"
+    },
+    {
+      "scenario": "retry_naive_immediate_nocount",
+      "n": 120,
+      "ok": "45.8%",
+      "rate_limited": "54.2%",
+      "timeout": "0.0%",
+      "provider_attempts_per_request": "3.71",
+      "attempts_per_ok_answer": "8.1",
+      "ok_total_p50_ms": "2333"
+    }
+  ],
+  "latency_breakdown_slowest_request": {
+    "scenario": "burst",
+    "request_id": "lt-main-burst-0015",
+    "total_ms": 24479.4,
+    "first_token_ms": 24271.3,
+    "after_first_token_ms": 208.10000000000218,
+    "attempts": 1,
+    "components_ms": {
+      "queue wait": 12015.5,
+      "limiter pacing wait": 10320.1,
+      "retry delays": 0.0,
+      "model wait before first token": 1926.2,
+      "model generation after first token": 208.10000000000014,
+      "unattributed (earlier failed attempts, loop overhead)": 9.5
+    },
+    "retrieval/verification": "not applicable: gateway-level load test has no retrieval or verification step"
+  },
+  "rows": 896
+}

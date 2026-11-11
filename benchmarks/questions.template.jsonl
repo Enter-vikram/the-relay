@@ -1,0 +1,2 @@
+# One example row showing the schema. It is a TEMPLATE: loading it as data is refused. Replace with real rows.
+{"id": "TEMPLATE-001", "type": "direct", "question": "<a question answerable from one passage>", "expect_refusal": false, "evidence": [{"paper": "attention", "page": 1, "quote": "<six or more words copied verbatim from that PDF page>"}], "required_facts": [["<acceptable wording A>", "<acceptable wording B>"]], "min_cited": 1, "trap": "", "notes": ""}

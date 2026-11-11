@@ -1,0 +1,31 @@
+request_id,scenario,final_reason,priority,attempts,queue_wait_ms,limiter_wait_ms,model_ttft_ms,model_total_ms,retry_delay_ms,est_tokens_in,queue_len_at_submit,stage_retrieval_ms,stage_verification_ms,stage_generation_ms,model_calls,user_message,run_id,seed
+lt-main-daily_exhausted-0000,daily_exhausted,ok,0,1,0.0,0.0,2383.3,2472.2,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0001,daily_exhausted,ok,0,1,0.0,0.0,1971.4,2207.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0002,daily_exhausted,ok,0,1,0.0,0.0,2565.1,2598.7,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0003,daily_exhausted,ok,0,1,0.0,0.0,2166.8,2529.6,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0004,daily_exhausted,ok,0,1,0.0,0.0,2018.1,2094.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0005,daily_exhausted,ok,0,1,0.0,0.0,2393.2,2437.9,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0006,daily_exhausted,ok,1,1,0.0,0.0,1462.0,2096.5,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0007,daily_exhausted,ok,0,1,0.0,0.0,2520.4,2878.4,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0008,daily_exhausted,ok,0,1,0.0,0.0,1694.3,1971.8,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0009,daily_exhausted,ok,0,1,0.0,0.0,1925.8,2133.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0010,daily_exhausted,ok,1,1,0.0,0.0,1430.8,1493.1,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0011,daily_exhausted,ok,1,1,0.0,0.0,1847.1,1934.0,0.0,1476,0,,,,,,lt-main,1
+lt-main-daily_exhausted-0012,daily_exhausted,daily_exhausted,0,1,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0013,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0014,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0015,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0016,daily_exhausted,daily_budget,1,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0017,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0018,daily_exhausted,daily_budget,1,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0019,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0020,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0021,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0022,daily_exhausted,daily_budget,1,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0023,daily_exhausted,daily_budget,1,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0024,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0025,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0026,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0027,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0028,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
+lt-main-daily_exhausted-0029,daily_exhausted,daily_budget,0,0,0.0,0.0,,,0.0,1476,0,,,,,"Today's model capacity is used up, so no answer can be generated now. Please try again later.",lt-main,1
