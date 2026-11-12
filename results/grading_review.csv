@@ -1,0 +1,2 @@
+request_id,setting,question_id,grade,why,answer
+qa-A-2-A-ATT-M01,A,ATT-M01,wrong,facts 2/4 groups; cited evidence 2/2 needed,The Transformer big model scores 28.4 BLEU on WMT 2014 English‑to‑German [1] and 41.0 BLEU on WMT 2014 English‑to‑French [1].

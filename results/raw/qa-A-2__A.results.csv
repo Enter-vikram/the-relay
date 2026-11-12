@@ -1,0 +1,22 @@
+request_id,scenario,source,start_time,first_token_ms,total_ms,status,retries,tokens_in,tokens_out,retrieval_setting,answer_grade
+qa-A-2-A-ATT-D01,quality-A,real,2026-11-12T10:56:37.358+00:00,1141.0,4406.0,ok,0,2088,958,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-ATT-D02,quality-A,real,2026-11-12T10:56:41.796+00:00,,15.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-ATT-D03,quality-A,real,2026-11-12T10:56:41.879+00:00,891.0,938.0,ok,0,1048,201,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-MOS-D01,quality-A,real,2026-11-12T10:56:42.871+00:00,1219.0,27094.0,ok,1,2778,1247,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-MOS-D02,quality-A,real,2026-11-12T10:57:10.019+00:00,13109.0,25422.0,ok,0,2417,457,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-DYN-D01,quality-A,real,2026-11-12T10:57:35.526+00:00,11422.0,25109.0,ok,0,2717,360,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-ATT-M01,quality-A,real,2026-11-12T10:58:00.734+00:00,13156.0,20422.0,ok,0,1684,875,A: 300tok/3/no-rerank,wrong
+qa-A-2-A-MOS-M01,quality-A,real,2026-11-12T10:58:21.210+00:00,14953.0,53703.0,ok,1,2877,1120,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-DYN-M01,quality-A,real,2026-11-12T10:59:14.969+00:00,15766.0,33125.0,ok,0,2915,1138,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-CMP-01,quality-A,real,2026-11-12T10:59:48.162+00:00,27562.0,51718.0,ok,0,4629,1377,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-CMP-02,quality-A,real,2026-11-12T11:00:39.992+00:00,22547.0,49375.0,ok,0,5127,878,A: 300tok/3/no-rerank,correct
+qa-A-2-A-CMP-03,quality-A,real,2026-11-12T11:01:29.478+00:00,24281.0,47500.0,ok,0,4230,1381,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-INT-01,quality-A,real,2026-11-12T11:02:17.081+00:00,13281.0,29562.0,ok,0,2702,926,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-INT-02,quality-A,real,2026-11-12T11:02:46.792+00:00,,15.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-INT-03,quality-A,real,2026-11-12T11:02:46.891+00:00,14516.0,27141.0,ok,0,2584,739,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-UNS-01,quality-A,real,2026-11-12T11:03:14.132+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_correctly
+qa-A-2-A-UNS-02,quality-A,real,2026-11-12T11:03:14.224+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_correctly
+qa-A-2-A-UNS-03,quality-A,real,2026-11-12T11:03:14.307+00:00,,16.0,ok,0,,,A: 300tok/3/no-rerank,refused_correctly
+qa-A-2-A-MIS-01,quality-A,real,2026-11-12T11:03:14.397+00:00,11125.0,22953.0,ok,0,2097,697,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-MIS-02,quality-A,real,2026-11-12T11:03:37.440+00:00,21625.0,41906.0,ok,0,4204,732,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-2-A-MIS-03,quality-A,real,2026-11-12T11:04:19.460+00:00,12906.0,24296.0,ok,0,2376,343,A: 300tok/3/no-rerank,refused_wrongly
