@@ -37,3 +37,20 @@ Capacity sheds -> `rate_limited`; deadline/queue/provider timeout -> `timeout`; 
 
 ## 7. Assumptions (all labelled in code and tables)
 Stand-in: max in-flight 8, provider queue 16, load sensitivity 0.5, recovery 5 s, 429 body text, `count_rejected_rpm`. Real Groq in-flight limit and 429 behaviour are unmeasured (`experiments/probe_429.py` measures the latter, ~10K tokens).
+
+## 8. Context budget: temporary depletion is not permanent exhaustion (fix after real run `qa-A-1`)
+**Symptom (real run qa-A-1, Setting A):** only 3 of 21 questions reached the model (5 API requests, 7,698 ledger tokens); several answerable questions were refused. The `qa-A-1` raw files were not available when this fix was written, so the cause below is established by code trace plus an offline reproduction, not by inspecting that run's files.
+
+**Root cause (in the pipeline, not the limiter or gateway):** `Pipeline._context_budget` sized the prompt from the token bucket's *current level*. The bucket holds 7,200 tokens (8,000 TPM x 0.9) and one answered question costs ~5K, so after one or two questions it was drained. The old code then shrank the context and, when less than ~200 tokens of room remained, refused with `budget_exhausted` *before calling the gateway*, although a ~20-40 s refill would have admitted the request. Depletion that clears itself was treated as a permanent limit. `max_budget_wait_s=5` also contradicted the 30 s (evaluation: 120 s) deadline.
+**Reproduction:** `tests/test_retrieval_pipeline.py::test_root_cause_old_policy_refused_answerable_questions_once_the_bucket_was_drained` freezes the old policy and, on a virtual clock, answers 2 of 8 questions; the new policy answers all 8.
+
+**New policy**
+- Context is sized from CAPACITY (`tpm_capacity`), the permanent ceiling. Refuse with `too_large` (zero model calls) only if even a minimal prompt can never fit.
+- Temporary depletion is paced by the gateway (it waits for the bucket, or sheds with `admission_wait` -> status `rate_limited` if the wait would exceed the deadline). That is a capacity outcome, not an "insufficient evidence" refusal.
+- Context shrinks only when the pacing wait would exceed `budget_wait_fraction` (0.5) of the remaining deadline, to what the bucket will hold after that wait, never below `min_context_tokens` (600). The decision is recorded in `PipelineResult.budget`.
+- Daily exhaustion stays in the gateway (`daily_budget`). Budget checks were not removed; they were moved to the layer that knows the clock.
+- `budget_exhausted` no longer exists as a pipeline refusal. New refusal reason: `too_large`.
+**Known approximation:** the gateway reserves `min(max_tokens, 400)` output tokens while hidden reasoning can use up to `gen_max_tokens`=900; settlement corrects it afterwards, so the bucket debt is bounded.
+
+## 9. Offline mock provider
+`python -m experiments.quality_evaluation --provider mock` runs the full pipeline against `experiments/mock_provider.ExtractiveMockClient` (copies the best-matching passage sentences, always verifies "supported"). It needs no key, no `--yes`, writes only to `results/mock/`, and labels rows `source=stand-in`. It validates plumbing and the retrieval/gate behaviour; it says nothing about Groq answer quality, latency or limits.

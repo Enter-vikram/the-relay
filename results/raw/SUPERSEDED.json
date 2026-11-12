@@ -3,5 +3,7 @@
   "lt-main__retry_fixed": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2",
   "lt-main__retry_exponential": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2",
   "lt-main__retry_jitter": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2",
-  "lt-main__retry_hardened": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2"
+  "lt-main__retry_hardened": "lt-main ran before the fix to classify_http (a 429 per-minute body with a huge Retry-After was misclassified as daily_exhausted); rerun as lt-retry2",
+  "rb-1.rows": "retrieval run rb-1 counted gate-refused answerable questions as retrieval misses (hits were discarded before scoring); fixed and rerun as rb-2. File kept for audit.",
+  "rb-sweep-1.rows": "same pre-fix hit definition as rb-1; its coverage/top_score columns and gate sweep are unaffected."
 }

@@ -18,6 +18,10 @@
 | overload | stand-in | 60 | 319 | 12.2 | 7473 / 24442 / 28470† | 7528 / 24505 / 28522† | 29 |
 | limit_halved | stand-in | 21 | 340 | 3.7 | 2565 / 19408 / 24130† | 2600 / 19504 / 24202† | 17 |
 | daily_exhausted | stand-in | 30 | 290 | 6.2 | 1995 / 2541 / 2560† | 2170 / 2725 / 2848† | 12 |
+| fault_5xx | stand-in | 21 | 341 | 3.7 | 2189 / 3075 / 3223† | 2263 / 3242 / 3265† | 21 |
+| fault_incomplete | stand-in | 21 | 341 | 3.7 | 2164 / 4710 / 5757† | 2291 / 4805 / 5960† | 21 |
+| fault_mixed | stand-in | 21 | 344 | 3.7 | 2427 / 5951 / 19425† | 2530 / 6092 / 19475† | 20 |
+| fault_timeout | stand-in | 21 | 341 | 3.7 | 2018 / 21890 / 22325† | 2204 / 21925 / 22420† | 21 |
 | retry_exponential | stand-in | 120 | 194 | 40.3 | 2178 / 3128 / 4665† | 2312 / 3422 / 4758† | 24 |
 | retry_fixed | stand-in | 120 | 184 | 40.3 | 2176 / 3128 / 5822† | 2310 / 3421 / 5913† | 24 |
 | retry_hardened | stand-in | 120 | 200 | 40.3 | 14209 / 26314 / 29260† | 14437 / 26780 / 29528† | 51 |
@@ -35,6 +39,10 @@
 | overload | stand-in | 60 | 48.3% | 51.7% | 0.0% | 0.0% | 0.00 | 1 | 1568 | $0.18 (simulated) |
 | limit_halved | stand-in | 21 | 81.0% | 19.0% | 0.0% | 0.0% | 0.43 | 0 | 1522 | $0.16 (simulated) |
 | daily_exhausted | stand-in | 30 | 40.0% | 60.0% | 0.0% | 0.0% | 0.00 | 0 | 1561 | $0.18 (simulated) |
+| fault_5xx | stand-in | 21 | 100.0% | 0.0% | 0.0% | 0.0% | 0.29 | 0 | 1619 | $0.19 (simulated) |
+| fault_incomplete | stand-in | 21 | 100.0% | 0.0% | 0.0% | 0.0% | 0.19 | 0 | 1569 | $0.18 (simulated) |
+| fault_mixed | stand-in | 21 | 95.2% | 0.0% | 0.0% | 4.8% | 0.33 | 0 | 1554 | $0.17 (simulated) |
+| fault_timeout | stand-in | 21 | 100.0% | 0.0% | 0.0% | 0.0% | 0.10 | 0 | 1540 | $0.17 (simulated) |
 
 ## Retry strategies (stand-in; assumption: rejected attempts count against RPM)
 | Scenario | n | Succeeded | Rate-limited | Timed out | Provider attempts/request | Attempts per ok answer | OK total p50 ms |

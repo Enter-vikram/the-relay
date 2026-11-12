@@ -1,0 +1,22 @@
+request_id,scenario,final_reason,priority,attempts,queue_wait_ms,limiter_wait_ms,model_ttft_ms,model_total_ms,retry_delay_ms,est_tokens_in,queue_len_at_submit,stage_retrieval_ms,stage_verification_ms,stage_generation_ms,model_calls,user_message,run_id,seed
+lt-fault-1-fault_mixed-0000,fault_mixed,ok,0,1,0.0,0.0,2200.7,2289.4,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0001,fault_mixed,ok,1,1,0.0,0.0,1969.0,2203.7,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0002,fault_mixed,ok,0,1,0.0,0.0,2565.0,2598.5,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0003,fault_mixed,ok,0,1,0.0,0.0,2167.3,2529.5,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0004,fault_mixed,ok,0,1,0.0,0.0,2019.8,2094.2,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0005,fault_mixed,ok,0,2,0.0,0.0,1756.9,2011.2,67.2,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0006,fault_mixed,ok,0,1,0.0,0.0,1593.9,1666.5,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0007,fault_mixed,ok,0,1,0.0,0.0,2542.4,2784.6,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0008,fault_mixed,ok,0,1,0.0,0.0,2438.5,2507.6,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0009,fault_mixed,ok,0,1,0.0,0.0,1554.6,1629.8,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0010,fault_mixed,ok,0,2,0.0,0.0,1598.5,1688.8,423.7,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0011,fault_mixed,ok,0,1,0.0,0.0,1318.7,1411.8,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0012,fault_mixed,ok,0,2,0.0,0.0,2362.4,2457.6,381.9,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0013,fault_mixed,ok,0,1,0.0,0.0,3343.4,3373.0,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0014,fault_mixed,ok,0,1,0.0,0.0,2163.6,2290.3,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0015,fault_mixed,ok,1,1,0.0,0.0,2415.8,2531.0,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0016,fault_mixed,ok,0,1,0.0,0.0,1900.8,2140.6,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0017,fault_mixed,incomplete_stream,0,3,0.0,0.0,,,623.0,1476,0,,,,,"The answer was cut off before it finished, so it was not shown.",lt-fault-1,1
+lt-fault-1-fault_mixed-0018,fault_mixed,ok,0,2,0.0,0.0,2558.4,2585.8,224.7,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0019,fault_mixed,ok,1,1,0.0,0.0,2523.7,2602.8,0.0,1476,0,,,,,,lt-fault-1,1
+lt-fault-1-fault_mixed-0020,fault_mixed,ok,1,2,0.0,1591.9,1842.5,1989.8,325.8,1476,0,,,,,,lt-fault-1,1

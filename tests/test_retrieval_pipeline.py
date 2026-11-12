@@ -21,6 +21,9 @@ from app.retrieval import Library, Retriever, SufficiencyConfig, fit_to_budget
 from tests.fixtures import synthetic as S
 
 
+from tests.helpers_pacing import PacingGateway
+
+
 def run(c):
     return asyncio.run(c)
 
@@ -310,8 +313,74 @@ def test_context_is_trimmed_when_token_budget_is_small():
     assert r.context_trimmed and len(r.retrieved) == 2
 
 
-def test_refuses_honestly_when_rate_limiter_leaves_no_room():
+def test_permanent_capacity_shortfall_is_refused_as_too_large_with_zero_calls():
+    # Changed from the old test (which expected "budget_exhausted"): a per-minute CAPACITY too small for even
+    # the minimal prompt is PERMANENT, so it gets its own reason; "budget_exhausted" no longer exists as a
+    # pipeline refusal because temporary depletion is now paced, not refused (see tests below).
     cfg = PipelineConfig(RetrievalSetting("T", 60, 10, 3, False))
     gw = ScriptedGateway([], tpm=600)                 # capacity too small for system prompt + answer
     r = run(Pipeline(S.retriever(), gw, cfg).ask(Q, "rq14"))
-    assert r.refused and r.reason == "budget_exhausted" and gw.calls == []
+    assert r.refused and r.reason == "too_large" and gw.calls == []
+
+
+# ---------------- temporary token depletion: pace, never refuse (regression for qa-A-1) ----------------
+def _depleting_script(n):
+    return [x for _ in range(n) for x in (cited_good(), SUP)]
+
+
+class OldPolicyPipeline(Pipeline):
+    """Frozen copy of the ORIGINAL policy that caused qa-A-1: size the context from the bucket's CURRENT level
+    and refuse when less than 200 tokens are left. Kept only to demonstrate the root cause."""
+    def _context_budget(self, question_chars, remaining_s=None):
+        from app.pipeline import BudgetPlan, estimate_tokens, DEFAULT_EXPECTED_OUT
+        lim, cfg = self.gw.limiter, self.cfg
+        overhead = estimate_tokens(len(V.GEN_SYSTEM) + question_chars + 400)
+        room = int(lim.tpm_capacity - DEFAULT_EXPECTED_OUT - overhead)
+        cap = min(cfg.max_context_tokens, room)
+        if lim.wait_needed(overhead + cap + DEFAULT_EXPECTED_OUT) > 5.0:       # old max_budget_wait_s
+            lim.tpm.refill(lim.clock())
+            room = int(lim.tpm.level - DEFAULT_EXPECTED_OUT - overhead)
+            cap = min(cap, max(room, 0))
+        return BudgetPlan(cap, room >= 200, 0.0, False)
+
+
+def test_root_cause_old_policy_refused_answerable_questions_once_the_bucket_was_drained():
+    gw = PacingGateway(_depleting_script(6))
+    pipe = OldPolicyPipeline(S.retriever(), gw, PipelineConfig(RetrievalSetting("T", 60, 10, 3, False), deadline_s=120))
+    results = [run(pipe.ask(Q, f"old{i}")) for i in range(6)]
+    reached = [r.model_calls > 0 for r in results]
+    assert reached[0] and not all(reached)                       # first question fine, later ones never reach the model
+    assert any(r.refused and r.reason == "too_large" for r in results)   # "too_large" == the old budget_exhausted exit
+
+
+def test_temporary_depletion_is_paced_by_the_gateway_not_refused_by_the_pipeline():
+    gw = PacingGateway(_depleting_script(6))
+    cfg = PipelineConfig(RetrievalSetting("T", 60, 10, 3, False), deadline_s=120)
+    pipe = Pipeline(S.retriever(), gw, cfg)
+    t0 = gw.clock()
+    results = [run(pipe.ask(Q, f"new{i}")) for i in range(6)]
+    assert all(r.answered and r.model_calls == 2 for r in results), [(r.reason, r.status) for r in results]
+    assert not any(r.budget["shrunk_for_wait"] for r in results)           # full context kept
+    assert any(w > 1.0 for w in gw.waits)                                   # it really waited for the refill
+    assert gw.min_level > -gw.limiter.tpm_capacity                          # debt stays bounded
+    # sustained rate cannot exceed the refill rate: 6 questions x ~5,000 tokens at 120 tokens/s
+    assert gw.clock() - t0 >= (6 * 5000 - gw.limiter.tpm_capacity) / gw.limiter.tpm.per_second * 0.9
+
+
+def test_context_shrinks_only_when_the_wait_exceeds_the_deadline_fraction_and_never_below_the_floor():
+    gw = PacingGateway([])
+    cfg = PipelineConfig(RetrievalSetting("T", 60, 10, 3, False), deadline_s=10, min_context_tokens=600)
+    gw.limiter.reserve(7000)                                                # nearly empty bucket
+    plan = Pipeline(S.retriever(), gw, cfg)._context_budget(len(Q), remaining_s=10)
+    assert plan.fits_ever and plan.shrunk and cfg.min_context_tokens <= plan.cap < cfg.max_context_tokens
+    gw2 = PacingGateway([])                                                  # full bucket: no shrink, no wait
+    plan2 = Pipeline(S.retriever(), gw2, cfg)._context_budget(len(Q), remaining_s=10)
+    assert not plan2.shrunk and plan2.wait_s == 0 and plan2.cap == cfg.max_context_tokens
+
+
+def test_wait_longer_than_the_deadline_is_shed_by_the_gateway_as_rate_limited_not_refused():
+    gw = PacingGateway([])
+    cfg = PipelineConfig(RetrievalSetting("T", 60, 10, 3, False), deadline_s=2)
+    gw.limiter.reserve(7100)
+    r = run(Pipeline(S.retriever(), gw, cfg).ask(Q, "shed1"))
+    assert r.status == "rate_limited" and r.reason == "admission_wait" and not r.refused and not r.answered

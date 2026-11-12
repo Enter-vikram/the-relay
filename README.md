@@ -37,6 +37,13 @@ python -m scripts.generate_report
 ```
 Raw files in `results\raw` are immutable; derived `results.csv`, `diagnostics.csv`, `report\tables.md` are rebuilt.
 
+## Offline A/B/C evaluation (MOCK provider, no key, no quota)
+```cmd
+python -m experiments.quality_evaluation --settings A B C --provider mock --run-id mock-2
+python -m scripts.compare_settings --run-id mock-2
+```
+Outputs go to `results\mock\` and `report\ab_comparison.md`. The mock copies passage sentences; it tests plumbing, retrieval and the sufficiency gate, NOT Groq answer quality, latency or limits. Provider-failure load scenarios: `python -m experiments.load_test --all --only fault_5xx fault_timeout fault_incomplete fault_mixed --run-id lt-fault-2` (about 7 minutes, simulated).
+
 ## Remaining manual steps
 0. If you already downloaded and indexed the papers, skip setup steps that repeat that work.
 1. `python -m scripts.build_embeddings` (optional hybrid; needs `pip install -r requirements-optional.txt`).
@@ -47,6 +54,6 @@ Raw files in `results\raw` are immutable; derived `results.csv`, `diagnostics.cs
 6. Check your real limits at https://console.groq.com/settings/limits, give honest Vaani feedback, write the collaboration section, review the report in `report\final_report.md`.
 
 ## Limits of this repo
-Load tests exercise the gateway only (no retrieval/verification). Retrieval and pipeline were tested only on SYNTHETIC text because arXiv was unreachable when they were built. PyMuPDF is AGPL/commercial: fine for private coursework, note it in the report.
+Load tests exercise the gateway only (no retrieval/verification). Retrieval was benchmarked on the real papers (`rb-2`); the full pipeline has been run offline with the MOCK provider only, and the corrected pipeline has not been run against Groq. See `docs\DECISIONS.md` section 8 for the context-budget fix. PyMuPDF is AGPL/commercial: fine for private coursework, note it in the report.
 
 Design rationale: `docs/DECISIONS.md`.

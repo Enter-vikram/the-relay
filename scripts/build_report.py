@@ -38,6 +38,30 @@ def t3_block(sec: dict) -> str:
     return "\n".join(rows)
 
 
+def retrieval_table(raw_dir: Path = Path("results/raw")) -> str:
+    """Retrieval-only table from the newest non-superseded results/raw/rb-<N>.rows.csv. Denominators shown."""
+    import json as _json
+    import pandas as pd
+    sup = _json.loads((raw_dir / "SUPERSEDED.json").read_text(encoding="utf-8")) if (raw_dir / "SUPERSEDED.json").is_file() else {}
+    files = sorted((f for f in raw_dir.glob("rb-[0-9]*.rows.csv") if f.name[:-4] not in sup),
+                   key=lambda f: int(re.match(r"rb-(\d+)", f.name).group(1)))
+    if not files:
+        return "retrieval-only benchmark: not measured"
+    d = pd.read_csv(files[-1])
+    head = ["| Setting (piece size / overlap, pieces fetched, re-rank) | Hit@k | Full-evidence recall | MRR | Reached model after gate | Gate blocks answerable | Gate blocks unsupported | Mean context tokens (est.) | Retrieval ms p50 / p95 |",
+            "|---|---|---|---|---|---|---|---|---|"]
+    rows = []
+    for label, g in d.groupby("setting", sort=False):
+        a, u = g[~g.expect_refusal], g[g.expect_refusal]
+        n = len(a)
+        f = lambda k, s=a: f"{int(k)}/{n} ({100 * k / n:.1f}%)"
+        rows.append(f"| {label} | {f((a.hit == True).sum())} | {f((a.recall == 1.0).sum())} | {a.rr.mean():.3f} | "
+                    f"{f((a.shown_hit == True).sum())} | {f(a.gated_refusal.sum())} | "
+                    f"{int(u.gated_refusal.sum())}/{len(u)} ({100 * u.gated_refusal.mean():.1f}%) | "
+                    f"{g.context_tokens_est.mean():.0f} | {g.retrieval_ms.quantile(.5):.1f} / {g.retrieval_ms.quantile(.95):.1f} |")
+    return "\n".join(head + rows) + f"\n\nSource: {files[-1].as_posix()} ({len(d)} rows; {n} answerable + {len(u)} unsupported questions per setting)."
+
+
 def fill(text: str, blocks: dict) -> str:
     for key, body in blocks.items():
         pat = re.compile(rf"(<!-- BEGIN:{key} -->)(.*?)(<!-- END:{key} -->)", re.S)
@@ -54,7 +78,8 @@ def main() -> int:
     sec = sections(TABLES.read_text(encoding="utf-8"))
     get = lambda prefix: next(v for k, v in sec.items() if k.startswith(prefix))
     blocks = {"T1": get("Table 1"), "T2A": "**Table 2a**\n\n" + drop_retry_rows(get("Table 2a")),
-              "T2B": "**Table 2b**\n\n" + get("Table 2b"), "T3": "**Table 3**\n\n" + t3_block(sec),
+              "T2B": "**Table 2b**\n\n" + get("Table 2b"), "RET": "**Retrieval-only results** (BM25, no model calls, **not answer quality**)\n\n" + retrieval_table(),
+              "T3": "**Table 3**\n\n" + t3_block(sec),
               "RETRY": "**Retry strategies** [SIM] (retry_* scenarios; rows are in results.csv)\n\n" + get("Retry strategies")}
     REPORT.write_text(fill(REPORT.read_text(encoding="utf-8"), blocks), encoding="utf-8", newline="\n")
     print("tables filled into", REPORT)

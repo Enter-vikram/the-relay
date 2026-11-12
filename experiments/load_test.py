@@ -81,6 +81,15 @@ SCENARIOS: dict[str, Scenario] = {s.name: s for s in [
     Scenario("daily_exhausted", "provider daily request budget scaled down to 12 so exhaustion happens in "
              "minutes (stand-in setting, not a Groq value)", 300, 6.0,
              standin={"rpd": 12}, client_believes={"rpd": 1000}),
+    # ---- provider failure (all fault rates are ASSUMED stand-in settings, not Groq measurements) ----
+    Scenario("fault_5xx", "provider returns injected HTTP 500 (12%) and 503 (8%) at a steady below-capacity rate",
+             360, 3.5, standin={"p_500": 0.12, "p_503": 0.08}),
+    Scenario("fault_timeout", "10% of requests hang until the client times out", 360, 3.5,
+             standin={"p_hang": 0.10, "hang_s": 120.0}, deadline_s=30.0),
+    Scenario("fault_incomplete", "15% of streams are cut before [DONE] (incomplete response)", 360, 3.5,
+             standin={"p_interrupt": 0.15}),
+    Scenario("fault_mixed", "5xx 8%, hang 5%, interrupted stream 8% together", 360, 3.5,
+             standin={"p_500": 0.05, "p_503": 0.03, "p_hang": 0.05, "p_interrupt": 0.08}),
     # ---- retry comparison: small prompts so RPM (20, stand-in setting) is the binding limit ----
     *[Scenario(f"retry_{name}", f"retry strategy {name}: {desc}", 180, 40.0, tokens_in=300,
                standin={"rpm": 20, "count_rejected_rpm": True}, client_believes={"rpm": 1000},

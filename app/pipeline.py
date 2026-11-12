@@ -35,13 +35,29 @@ class PipelineConfig:
     llm_verify: bool = True
     max_model_calls: int = 4
     max_context_tokens: int = 3500        # est. tokens of passage text
-    max_budget_wait_s: float = 5.0        # if pacing would wait longer, shrink context instead
+    # Temporary token-bucket depletion is handled by PACING (the gateway waits), never by refusing. The pipeline
+    # only shrinks context when the wait for a full-size request would eat more than this fraction of the
+    # remaining deadline, and never below min_context_tokens (below that it waits, or the gateway sheds).
+    budget_wait_fraction: float = 0.5
+    max_budget_wait_s: float | None = None   # optional absolute override of the above (seconds)
+    min_context_tokens: int = 600
     gen_max_tokens: int = 900
     verify_max_tokens: int = 500
     deadline_s: float = 30.0
     support_threshold: float = 0.5        # lexical support; uncalibrated placeholder
     sufficiency: SufficiencyConfig = field(default_factory=SufficiencyConfig)
     comparison_per_paper: int = 2
+
+
+MIN_USEFUL_CONTEXT = 200
+
+
+@dataclass
+class BudgetPlan:
+    cap: int            # context tokens to send
+    fits_ever: bool     # False: cannot fit the per-minute CAPACITY even with minimal context (permanent)
+    wait_s: float       # pacing wait the gateway is expected to impose for this request
+    shrunk: bool        # context reduced because waiting for the full size would use too much of the deadline
 
 
 @dataclass
@@ -77,12 +93,14 @@ class PipelineResult:
     verification: str = ""            # passed | failed | skipped
     context_trimmed: bool = False
     est_tokens_in: int = 0
+    budget: dict = field(default_factory=dict)       # context budget decision (cap, expected pacing wait, shrunk)
+    first_pass: list = field(default_factory=list)   # raw first-pass hits, before the sufficiency gate (for benchmarks)
 
     def public(self) -> dict:
         return {"status": self.status, "answered": self.answered, "refused": self.refused,
                 "reason": self.reason, "answer": self.answer, "citations": self.citations,
                 "message": self.message, "question_kind": self.question_kind,
-                "timings_ms": {"total": self.total_ms, "first_token": self.first_token_ms, **self.stage_ms}}
+                "budget": self.budget, "timings_ms": {"total": self.total_ms, "first_token": self.first_token_ms, **self.stage_ms}}
 
 
 class ToolRegistry:
@@ -109,20 +127,33 @@ class Pipeline:
         self.retriever, self.gw, self.cfg, self.page_counts = retriever, gateway, cfg, page_counts
 
     # -------------------------------------------------------------- helpers
-    def _context_budget(self, question_chars: int) -> tuple[int, int]:
-        """Return (context cap for this request, room the rate limiter leaves).
-        The cap is the smaller of the configured cap and what fits the per-minute capacity; when pacing
-        would wait longer than max_budget_wait_s we shrink to what the bucket holds right now instead
-        of waiting (retrieval budget policy: reduce context before the limit, never skip verification)."""
+    def _context_budget(self, question_chars: int, remaining_s: float | None = None) -> "BudgetPlan":
+        """Decide how much passage text to send. Distinguishes three situations:
+        1. PERMANENT: even the minimum context cannot fit the per-minute CAPACITY -> fits_ever=False.
+        2. TEMPORARY depletion: the bucket is low now but refills -> keep the full context and let the gateway
+           pace, as long as the wait fits inside budget_wait_fraction of the remaining deadline.
+        3. Wait too long for a full-size request -> shrink context to what the bucket will hold after the
+           allowed wait (not what it holds right now), never below min_context_tokens.
+        Daily budget exhaustion is the gateway's job (admission 'daily_budget')."""
         lim, cfg = self.gw.limiter, self.cfg
+        remaining = cfg.deadline_s if remaining_s is None else remaining_s
         overhead = estimate_tokens(len(V.GEN_SYSTEM) + question_chars + 400)
-        room = int(lim.tpm_capacity - DEFAULT_EXPECTED_OUT - overhead)
-        cap = min(cfg.max_context_tokens, room)
-        if lim.wait_needed(overhead + cap + DEFAULT_EXPECTED_OUT) > cfg.max_budget_wait_s:
+        capacity_room = int(lim.tpm_capacity) - DEFAULT_EXPECTED_OUT - overhead
+        if capacity_room < MIN_USEFUL_CONTEXT:
+            return BudgetPlan(0, False, 0.0, False)
+        cap = min(cfg.max_context_tokens, capacity_room)
+        allowed = cfg.max_budget_wait_s if cfg.max_budget_wait_s is not None else cfg.budget_wait_fraction * remaining
+        need = overhead + cap + DEFAULT_EXPECTED_OUT
+        wait = lim.wait_needed(need)
+        shrunk = False
+        if wait > allowed:
             lim.tpm.refill(lim.clock())
-            room = int(lim.tpm.level - DEFAULT_EXPECTED_OUT - overhead)
-            cap = min(cap, max(room, 0))
-        return cap, room
+            avail = lim.tpm.level + lim.tpm.per_second * allowed
+            floor = min(cfg.min_context_tokens, cap)
+            shrunk_cap = max(min(cap, int(avail - DEFAULT_EXPECTED_OUT - overhead)), floor)
+            shrunk, cap = shrunk_cap < cap, shrunk_cap
+            wait = lim.wait_needed(overhead + cap + DEFAULT_EXPECTED_OUT)
+        return BudgetPlan(cap, True, wait, shrunk)
 
     def _search(self, q, k, rerank, per_paper, exclude=frozenset()):
         return self.retriever.search(q, k, rerank=rerank, mode=self.cfg.mode,
@@ -132,7 +163,8 @@ class Pipeline:
         r.total_ms = round((time.monotonic() - t0) * 1000, 1)
         return r
 
-    async def _retrieve(self, info, tools: "ToolRegistry", stage: dict, r: "PipelineResult"):
+    async def _retrieve(self, info, tools: "ToolRegistry", stage: dict, r: "PipelineResult",
+                        remaining_s: float | None = None):
         """Steps 3-5. Returns the hits to show the model, or a PipelineResult stub describing a refusal
         (reason/message set, refused=True). Shared with the retrieval benchmark (no model calls here)."""
         cfg, s = self.cfg, self.cfg.setting
@@ -140,6 +172,7 @@ class Pipeline:
         t = time.monotonic()
         hits: list[Hit] = await tools.call("search_papers", q=info.text, k=s.top_k, rerank=s.rerank, per_paper=per_paper)
         stage["retrieval_ms"] += (time.monotonic() - t) * 1000
+        r.first_pass = list(hits)
         # BRANCH: sufficiency; LOOP #1: one expansion that skips already-seen evidence
         suff = self.retriever.assess(info.text, hits, cfg.sufficiency)
         if not suff.sufficient:
@@ -157,11 +190,13 @@ class Pipeline:
             hits = merged
         else:
             r.sufficiency = {**vars(suff), "expanded": False}
-        budget, room = self._context_budget(len(info.text))
-        if room < 200:                                  # the rate limiter leaves no usable room
-            return PipelineResult(r.request_id, "ok", refused=True, reason="budget_exhausted",
-                                  message="Model capacity is too low right now to answer safely. Please retry shortly.")
-        hits, r.context_trimmed = fit_to_budget(hits, budget)
+        plan = self._context_budget(len(info.text), remaining_s)
+        r.budget = {"context_cap": plan.cap, "expected_pacing_wait_s": round(plan.wait_s, 2), "shrunk_for_wait": plan.shrunk}
+        if not plan.fits_ever:                          # PERMANENT: exceeds per-minute capacity, waiting cannot help
+            return PipelineResult(r.request_id, "ok", refused=True, reason="too_large",
+                                  message="This question cannot be answered within the model's per-minute token capacity.")
+        hits, r.context_trimmed = fit_to_budget(hits, plan.cap)
+        r.context_trimmed = r.context_trimmed or plan.shrunk
         return hits
 
     async def retrieve_only(self, question: str):
@@ -214,7 +249,7 @@ class Pipeline:
                                        "Please name the topic or paper you mean.")
 
         # 3-5 retrieve (tool call) -> sufficiency branch (+ expansion loop) -> context budget
-        out = await self._retrieve(info, tools, stage, r)
+        out = await self._retrieve(info, tools, stage, r, remaining_s=cfg.deadline_s - (time.monotonic() - t0))
         if isinstance(out, PipelineResult):
             return refuse(out.reason, out.message) if out.refused else out
         hits = out

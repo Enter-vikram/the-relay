@@ -1,0 +1,22 @@
+request_id,scenario,source,start_time,first_token_ms,total_ms,status,retries,tokens_in,tokens_out,retrieval_setting,answer_grade
+qa-A-1-A-ATT-D01,quality-A,real,2026-11-12T01:57:17.067+00:00,1922.0,3391.0,ok,0,2062,531,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-ATT-D02,quality-A,real,2026-11-12T01:57:20.484+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-ATT-D03,quality-A,real,2026-11-12T01:57:20.511+00:00,1219.0,1219.0,ok,0,1048,264,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-MOS-D01,quality-A,real,2026-11-12T01:57:21.755+00:00,1485.0,3407.0,ok,0,2754,1039,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-MOS-D02,quality-A,real,2026-11-12T01:57:25.181+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-DYN-D01,quality-A,real,2026-11-12T01:57:25.208+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-ATT-M01,quality-A,real,2026-11-12T01:57:25.231+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-MOS-M01,quality-A,real,2026-11-12T01:57:25.251+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-DYN-M01,quality-A,real,2026-11-12T01:57:25.272+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-CMP-01,quality-A,real,2026-11-12T01:57:25.297+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-CMP-02,quality-A,real,2026-11-12T01:57:25.318+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-CMP-03,quality-A,real,2026-11-12T01:57:25.341+00:00,,15.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-INT-01,quality-A,real,2026-11-12T01:57:25.367+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-INT-02,quality-A,real,2026-11-12T01:57:25.388+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-INT-03,quality-A,real,2026-11-12T01:57:25.410+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-UNS-01,quality-A,real,2026-11-12T01:57:25.433+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_correctly
+qa-A-1-A-UNS-02,quality-A,real,2026-11-12T01:57:25.456+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_correctly
+qa-A-1-A-UNS-03,quality-A,real,2026-11-12T01:57:25.481+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_correctly
+qa-A-1-A-MIS-01,quality-A,real,2026-11-12T01:57:25.503+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-MIS-02,quality-A,real,2026-11-12T01:57:25.525+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly
+qa-A-1-A-MIS-03,quality-A,real,2026-11-12T01:57:25.547+00:00,,0.0,ok,0,,,A: 300tok/3/no-rerank,refused_wrongly

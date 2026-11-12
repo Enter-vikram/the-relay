@@ -57,19 +57,18 @@ python -m scripts.build_embeddings
 ```
 Downloads about 90 MB model plus PyTorch. Skip it and hybrid is reported "not measured", never faked.
 
-## 7. Create and validate benchmark questions [NO QUOTA]
-Write `benchmarks\questions.jsonl` yourself from the real PDFs, following `benchmarks\README.md` and `benchmarks\questions.template.jsonl` (verbatim evidence quote, correct 1-based PDF page, required facts; include unsupported and misleading questions). Do not use extraction artefacts or the bibliography as evidence.
+## 7. Benchmark questions [NO QUOTA]
+`benchmarks\questions.jsonl` (21 questions, your file) is included unchanged; `questions.original.jsonl` is a copy and `benchmarks\AUDIT.md` lists my checks and caveats.
 ```cmd
 python -m experiments.validate_benchmark
 ```
-It refuses template rows and any quote not found on the stated page.
 
 ## 8. Retrieval benchmark [NO QUOTA]
 ```cmd
-python -m scripts.run_benchmarks --settings A B C
-python -m scripts.run_benchmarks --settings A B C --sweep
+python -m scripts.run_benchmarks --settings A B C --run-id rb-3
+python -m scripts.run_benchmarks --settings B --sweep --run-id rb-sweep-2
 ```
-Add `--hybrid` after step 6. `--sweep` helps pick the sufficiency thresholds.
+Use a NEW `--run-id` each time (raw files are never overwritten). Reference results already exist: `results\raw\rb-2.rows.csv` (rb-1 is superseded). Add `--hybrid` after step 6. `--sweep` helps pick the sufficiency thresholds.
 
 ## 9. Real Groq experiments [QUOTA]
 Plan: about 2 model calls per answered question, about 1,500 tokens per call, 8,000 tokens per minute. The tool paces itself and stops at 80% of the documented daily budgets (ledger: `results\real_usage_ledger.jsonl`).
@@ -106,3 +105,17 @@ Last verified result in the build environment: 211 passed (Linux). Not yet run o
 
 ## What needs you personally
 Benchmark questions (step 7), the Vaani feedback, the assistant-collaboration account (`report\conversation_history.md`), the report placeholders, and your approval before any commit or push.
+
+## Added after the context-budget fix (all [NO QUOTA]; not yet run on Windows)
+```cmd
+python -m pytest -q
+python -m experiments.quality_evaluation --settings A B C --provider mock --run-id mock-win-1
+python -m scripts.compare_settings --run-id mock-win-1
+python -m experiments.load_test --all --only fault_5xx fault_timeout fault_incomplete fault_mixed --run-id lt-fault-win-1
+python -m scripts.load_report
+python -m scripts.generate_report
+python -m scripts.build_report
+python -m scripts.check_report --file report\final_report.md --pdf report\final_report.pdf
+python -m experiments.quality_evaluation --settings A --dry-run --run-id qa-A-2
+```
+Expected on Linux: 220 tests pass. A real Setting A run (`--yes`, own `.env`) is only for after you approve it; use a new run ID (not `qa-A-1`).

@@ -1,0 +1,22 @@
+request_id,scenario,final_reason,priority,attempts,queue_wait_ms,limiter_wait_ms,model_ttft_ms,model_total_ms,retry_delay_ms,est_tokens_in,queue_len_at_submit,stage_retrieval_ms,stage_verification_ms,stage_generation_ms,model_calls,user_message,run_id,seed
+lt-fault-win-1-fault_mixed-0000,fault_mixed,ok,0,1,0.0,0.0,2297.0,2406.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0001,fault_mixed,ok,1,1,0.0,0.0,1984.0,2234.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0002,fault_mixed,ok,0,1,0.0,0.0,2594.0,2625.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0003,fault_mixed,ok,0,1,0.0,0.0,2203.0,2562.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0004,fault_mixed,ok,0,1,0.0,0.0,2032.0,2094.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0005,fault_mixed,ok,0,2,0.0,0.0,1766.0,2031.0,67.2,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0006,fault_mixed,ok,0,1,0.0,0.0,1609.0,1687.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0007,fault_mixed,ok,0,1,0.0,0.0,2547.0,2797.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0008,fault_mixed,ok,0,1,0.0,0.0,2453.0,2547.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0009,fault_mixed,ok,0,1,0.0,0.0,1579.0,1641.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0010,fault_mixed,ok,0,2,0.0,0.0,1625.0,1719.0,423.7,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0011,fault_mixed,ok,0,1,0.0,0.0,1344.0,1438.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0012,fault_mixed,ok,0,2,0.0,0.0,2344.0,2469.0,381.9,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0013,fault_mixed,ok,0,1,0.0,0.0,3375.0,3406.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0014,fault_mixed,ok,0,1,0.0,0.0,2187.0,2343.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0015,fault_mixed,ok,1,1,0.0,0.0,2438.0,2547.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0016,fault_mixed,ok,0,1,0.0,0.0,1922.0,2172.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0017,fault_mixed,incomplete_stream,0,3,0.0,0.0,,,623.0,1476,0,,,,,"The answer was cut off before it finished, so it was not shown.",lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0018,fault_mixed,ok,0,2,0.0,0.0,2562.0,2593.0,224.7,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0019,fault_mixed,ok,1,1,0.0,0.0,2546.0,2625.0,0.0,1476,0,,,,,,lt-fault-win-1,1
+lt-fault-win-1-fault_mixed-0020,fault_mixed,ok,1,2,0.0,1530.3,1843.0,2000.0,325.8,1476,0,,,,,,lt-fault-win-1,1

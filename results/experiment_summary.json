@@ -115,6 +115,82 @@
       "p99_unstable": true
     },
     {
+      "scenario": "fault_5xx",
+      "source": "stand-in",
+      "requests": 21,
+      "duration_s": "341",
+      "offered_per_min": "3.7",
+      "ttft": [
+        "2189",
+        "3075",
+        "3223"
+      ],
+      "total": [
+        "2263",
+        "3242",
+        "3265"
+      ],
+      "n_ok": 21,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "fault_incomplete",
+      "source": "stand-in",
+      "requests": 21,
+      "duration_s": "341",
+      "offered_per_min": "3.7",
+      "ttft": [
+        "2164",
+        "4710",
+        "5757"
+      ],
+      "total": [
+        "2291",
+        "4805",
+        "5960"
+      ],
+      "n_ok": 21,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "fault_mixed",
+      "source": "stand-in",
+      "requests": 21,
+      "duration_s": "344",
+      "offered_per_min": "3.7",
+      "ttft": [
+        "2427",
+        "5951",
+        "19425"
+      ],
+      "total": [
+        "2530",
+        "6092",
+        "19475"
+      ],
+      "n_ok": 20,
+      "p99_unstable": true
+    },
+    {
+      "scenario": "fault_timeout",
+      "source": "stand-in",
+      "requests": 21,
+      "duration_s": "341",
+      "offered_per_min": "3.7",
+      "ttft": [
+        "2018",
+        "21890",
+        "22325"
+      ],
+      "total": [
+        "2204",
+        "21925",
+        "22420"
+      ],
+      "n_ok": 21,
+      "p99_unstable": true
+    },
+    {
       "scenario": "retry_exponential",
       "source": "stand-in",
       "requests": 120,
@@ -309,6 +385,58 @@
       "cost_per_1000": "$0.18 (simulated)"
     },
     {
+      "scenario": "fault_5xx",
+      "source": "stand-in",
+      "n": 21,
+      "ok": "100.0%",
+      "rate_limited": "0.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "0.29",
+      "peak_queue": "0",
+      "tokens_per_answer": "1619",
+      "cost_per_1000": "$0.19 (simulated)"
+    },
+    {
+      "scenario": "fault_incomplete",
+      "source": "stand-in",
+      "n": 21,
+      "ok": "100.0%",
+      "rate_limited": "0.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "0.19",
+      "peak_queue": "0",
+      "tokens_per_answer": "1569",
+      "cost_per_1000": "$0.18 (simulated)"
+    },
+    {
+      "scenario": "fault_mixed",
+      "source": "stand-in",
+      "n": 21,
+      "ok": "95.2%",
+      "rate_limited": "0.0%",
+      "timeout": "0.0%",
+      "error": "4.8%",
+      "retries_per_request": "0.33",
+      "peak_queue": "0",
+      "tokens_per_answer": "1554",
+      "cost_per_1000": "$0.17 (simulated)"
+    },
+    {
+      "scenario": "fault_timeout",
+      "source": "stand-in",
+      "n": 21,
+      "ok": "100.0%",
+      "rate_limited": "0.0%",
+      "timeout": "0.0%",
+      "error": "0.0%",
+      "retries_per_request": "0.10",
+      "peak_queue": "0",
+      "tokens_per_answer": "1540",
+      "cost_per_1000": "$0.17 (simulated)"
+    },
+    {
       "scenario": "retry_exponential",
       "source": "stand-in",
       "n": 120,
@@ -467,5 +595,5 @@
     },
     "retrieval/verification": "not applicable: gateway-level load test has no retrieval or verification step"
   },
-  "rows": 896
+  "rows": 980
 }

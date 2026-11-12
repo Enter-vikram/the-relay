@@ -62,11 +62,14 @@ async def evaluate(setting, mode: str, questions, lib: Library, embedder, suff: 
                "coverage": res.sufficiency.get("coverage", ""), "top_score": res.sufficiency.get("top_score", ""),
                "n_hits": len(hits or []), "retrieval_ms": round(ms, 2),
                "context_tokens_est": sum(estimate_tokens(len(h.chunk["text"])) - 70 for h in (hits or [])),
-               "hit": "", "recall": "", "first_rank": "", "rr": ""}
+               "hit": "", "recall": "", "first_rank": "", "rr": "", "shown_hit": ""}
         if not q.expect_refusal:
-            m = retrieval_metrics([h.chunk for h in (hits or [])], q)
+            # Retrieval quality is measured on the raw first-pass top-k, BEFORE the sufficiency gate, so a gate
+            # refusal is not miscounted as a retrieval miss. `shown_hit` = evidence actually reached the model.
+            m = retrieval_metrics([h.chunk for h in res.first_pass], q)
+            shown = retrieval_metrics([h.chunk for h in (hits or [])], q)
             row.update(hit=m["hit"], recall=round(m["recall"], 3), first_rank=m["first_rank"] or "",
-                       rr=round(m["rr"], 3))
+                       rr=round(m["rr"], 3), shown_hit=shown["hit"])
         rows.append(row)
     return rows
 
@@ -79,6 +82,7 @@ def summarize(rows: list[dict]) -> dict:
             "hit_at_k_pct": pct(sum(r["hit"] is True for r in ans), len(ans)),
             "full_evidence_recall_pct": pct(sum(float(r["recall"]) == 1.0 for r in ans if r["recall"] != ""), len(ans)),
             "mrr": round(sum(float(r["rr"] or 0) for r in ans) / len(ans), 3) if ans else None,
+            "shown_hit_after_gate_pct": pct(sum(r["shown_hit"] is True for r in ans), len(ans)),
             "gate_blocks_unsupported_pct": pct(sum(r["gated_refusal"] for r in uns), len(uns)),
             "gate_blocks_answerable_pct": pct(sum(r["gated_refusal"] for r in ans), len(ans)),
             "mean_context_tokens_est": round(sum(r["context_tokens_est"] for r in rows) / len(rows), 0),

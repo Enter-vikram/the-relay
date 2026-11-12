@@ -1,5 +1,13 @@
 {
   "results/baseline_v2.csv": "014ad6eacd5dc174448c64fa4e7d8c0186b7ea7d7e29049b32bfc1908b9b610a",
+  "results/raw/lt-fault-1__fault_5xx.diagnostics.csv": "78de40c137690bdaa6de250a4b5f94064a9de395a9c90d629b71651d4bab146c",
+  "results/raw/lt-fault-1__fault_5xx.results.csv": "bda4523bade3167a4898a24c1ba953a3d678a92ad3bf3601b93a0bb0f0fd762c",
+  "results/raw/lt-fault-1__fault_incomplete.diagnostics.csv": "435dde5f16458c0ae1f9f5d602cb8dc2a1697237d4c64530d5fd735be0a95527",
+  "results/raw/lt-fault-1__fault_incomplete.results.csv": "6f0d39e0c6ce8434bd1b11ede9c646346d875e778ff28c11af4b40fcb5340d72",
+  "results/raw/lt-fault-1__fault_mixed.diagnostics.csv": "1aaa99a8efa04625d93c733bcb3205f2b4cfe7b1a376433a6c8a6be4701ae3dd",
+  "results/raw/lt-fault-1__fault_mixed.results.csv": "da1125e1620ac31c6cf72b54cd0faedce6ddecd2b1e365300177b3c2ed4e0b58",
+  "results/raw/lt-fault-1__fault_timeout.diagnostics.csv": "33d9abc1cdccfdfbf9d40c2307e7981a595182045244947f8ace84230943a4ac",
+  "results/raw/lt-fault-1__fault_timeout.results.csv": "3e4535e13d8c5104d00dafda68dd507bb08613c939705a610e7f34a31422af2e",
   "results/raw/lt-main__burst.diagnostics.csv": "e0487c565a2f05fb4aed3201f6a5ffcdb1ebf5e499d943b67e429b5f70466319",
   "results/raw/lt-main__burst.results.csv": "de5ec603965024373be6f71a9d984795a24b0a7f5f26203619106d952bf197ff",
   "results/raw/lt-main__daily_exhausted.diagnostics.csv": "c461e0090b8dd46439558cc142a1106b34b7ab3835f421415698730404db3878",

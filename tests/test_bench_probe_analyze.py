@@ -223,3 +223,34 @@ def test_build_report_fills_markers_and_marks_table3_not_measured():
     assert "<!-- BEGIN:X -->\nT\n<!-- END:X -->" in out
     assert fill(out, {"X": "T"}) == out            # idempotent
     assert sections("## A\nbody\n## B\nmore") == {"A": "body", "B": "more"}
+
+
+def test_retrieval_metrics_are_measured_before_the_gate_not_after_it():
+    """Regression: a question refused by the sufficiency gate used to be counted as a retrieval MISS."""
+    from app.chunking import SETTINGS
+    from app.retrieval import SufficiencyConfig
+    from experiments.retrieval_benchmark import evaluate, summarize
+    quest = q(1, question="applies quasi-widget folding to every token")
+    strict = SufficiencyConfig(min_coverage=0.999, min_top_score=1e9)       # forces the gate to refuse
+    rows = asyncio.run(evaluate(SETTINGS["A"], "bm25", [quest], S.retriever().lib, None, strict))
+    assert rows[0]["gated_refusal"] is True
+    assert rows[0]["hit"] is True and rows[0]["shown_hit"] is False        # found, then withheld by the gate
+    s = summarize(rows)
+    assert s["hit_at_k_pct"] == 100.0 and s["shown_hit_after_gate_pct"] == 0.0
+    assert s["gate_blocks_answerable_pct"] == 100.0
+
+
+def test_retrieval_table_uses_newest_unsuperseded_run_and_shows_denominators(tmp_path):
+    from scripts.build_report import retrieval_table
+    cols = "setting,mode,id,type,expect_refusal,gated_refusal,hit,recall,rr,shown_hit,context_tokens_est,retrieval_ms".split(",")
+    def rows(hit):
+        return [["S", "bm25", "a", "direct", False, False, hit, 1.0 if hit else 0.0, 1.0 if hit else 0.0, hit, 100, 1.0],
+                ["S", "bm25", "b", "direct", False, True, hit, 1.0, 0.5, False, 100, 1.0],
+                ["S", "bm25", "u", "unsupported", True, True, "", "", "", "", 0, 1.0]]
+    for name, hit in (("rb-1", False), ("rb-2", True)):
+        pd.DataFrame(rows(hit), columns=cols).to_csv(tmp_path / f"{name}.rows.csv", index=False)
+    assert "2/2 (100.0%)" in retrieval_table(tmp_path)                  # rb-2 wins (newest)
+    (tmp_path / "SUPERSEDED.json").write_text('{"rb-2.rows": "x"}')
+    assert "0/2 (0.0%)" in retrieval_table(tmp_path)                    # superseded run skipped -> rb-1
+    assert "1/1 (100.0%)" in retrieval_table(tmp_path)                  # gate blocks 1/1 unsupported
+    assert retrieval_table(tmp_path / "nothing") == "retrieval-only benchmark: not measured"

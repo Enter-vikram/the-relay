@@ -30,7 +30,11 @@ from app import usage_ledger
 from app import verifier as V
 from app.chunking import SETTINGS
 from app.config import gateway_settings as G, settings
+from app.gateway import Gateway
+from app.limiter import Limiter
 from app.main import build_gateway
+from app.queue_manager import QueueManager
+from app.retry import RetryBudget, RetryPolicy
 from app.metrics import Record, append_records
 from app.papers import RESEARCH_DIR
 from app.pipeline import Pipeline, PipelineConfig
@@ -38,7 +42,21 @@ from app.queue_manager import BATCH
 from app.retrieval import Library, Retriever
 from app.tokens import DEFAULT_EXPECTED_OUT, estimate_tokens
 from experiments.benchmark_data import DatasetError, grade, load_page_text, load_questions, validate
+from experiments.mock_provider import ExtractiveMockClient
 from experiments.retrieval_benchmark import INDEX, QUESTIONS, RAW, _NullGateway, setting_label
+
+MOCK_RAW = Path(__file__).resolve().parent.parent / "results" / "mock"
+
+
+def page_counts():
+    summ = RESEARCH_DIR / "extracted" / "summary.json"
+    return {k: v["pages"] for k, v in json.loads(summ.read_text(encoding="utf-8")).items()} if summ.is_file() else None
+
+
+def mock_gateway() -> Gateway:
+    """Real gateway + real limiter code paths, but unlimited budgets (the mock has no provider limits)."""
+    return Gateway(ExtractiveMockClient(), Limiter(10**6, 10**9, 10**9, 10**12, 1.0), QueueManager(4, 50),
+                   RetryPolicy("jitter", max_attempts=3), RetryBudget(), request_timeout_s=20)
 
 LEDGER = Path(__file__).resolve().parent.parent / "results" / "real_usage_ledger.jsonl"
 REVIEW = Path(__file__).resolve().parent.parent / "results" / "grading_review.csv"
@@ -71,6 +89,10 @@ async def main_async(a) -> int:
     print(f"ledger (last 24 h): {used_req} requests, {used_tok} tokens | documented daily limits: "
           f"{G.rpd} requests, {G.tpd} tokens (unverified for this account)")
     gw = None
+    mock = a.provider == "mock"
+    out_dir = MOCK_RAW if mock else RAW
+    out_dir.mkdir(parents=True, exist_ok=True)
+    review_path = (MOCK_RAW / "grading_review.csv") if mock else REVIEW
     for sname in a.settings:
         setting = SETTINGS[sname]
         lib = Library.load(INDEX, setting.chunking_id)
@@ -86,17 +108,17 @@ async def main_async(a) -> int:
               f"(remaining safe budget ~{remaining}).")
         if a.dry_run:
             continue
-        if not a.yes:
+        if not mock and not a.yes:
             print("Refusing to spend quota without --yes.")
             return 3
-        if est_total > remaining and not a.ignore_estimate:
+        if not mock and est_total > remaining and not a.ignore_estimate:
             print("Estimate exceeds the safe remaining daily budget. Use --limit N, run this setting tomorrow, "
                   "or pass --ignore-estimate (the per-question ledger guard still applies).")
             return 3
         if gw is None:
-            gw, source = build_gateway("real")
-        pipe = Pipeline(retriever, gw, cfg)
-        base = RAW / f"{run_id}__{sname}"
+            gw = mock_gateway() if mock else build_gateway("real")[0]
+        pipe = Pipeline(retriever, gw, cfg, page_counts())      # page_counts enables the invalid-page citation check
+        base = out_dir / f"{run_id}__{sname}"
         res_p, diag_p, ans_p = (Path(str(base) + s) for s in (".results.csv", ".diagnostics.csv", ".answers.jsonl"))
         done = set()
         if res_p.is_file():
@@ -108,19 +130,20 @@ async def main_async(a) -> int:
             _, hits, _ = await probe.retrieve_only(q.question)
             need = estimate_question_tokens(probe, hits) if hits else 0
             req_used, tok_used = usage_ledger.used_last_24h(LEDGER)
-            if tok_used + need > G.tpd * BUDGET_FRACTION or req_used + 4 > G.rpd * BUDGET_FRACTION:
+            if not mock and (tok_used + need > G.tpd * BUDGET_FRACTION or req_used + 4 > G.rpd * BUDGET_FRACTION):
                 print(f"STOP: next question would pass {int(BUDGET_FRACTION * 100)}% of the daily budget "
                       f"({tok_used} tokens, {req_used} requests used). Resume tomorrow with --run-id {run_id}.")
                 return 4
             start = datetime.now(timezone.utc).isoformat(timespec="milliseconds")
             r = await pipe.ask(q.question, rid, priority=BATCH)
             calls = r.model_calls + r.retries
-            usage_ledger.append(LEDGER, requests=calls, tokens=(r.tokens_in or 0) + (r.tokens_out or 0), tag=rid)
+            if not mock:
+                usage_ledger.append(LEDGER, requests=calls, tokens=(r.tokens_in or 0) + (r.tokens_out or 0), tag=rid)
             g, review, why = (None, False, "")
             if r.status == "ok":
                 g, review, why = grade(q, answered=r.answered, refused=r.refused, answer=r.answer, citations=r.citations)
             rec = Record(
-                request_id=rid, scenario=f"quality-{sname}", source="real", start_time=start, status=r.status,
+                request_id=rid, scenario=f"{'mock-' if mock else ''}quality-{sname}", source="stand-in" if mock else "real", start_time=start, status=r.status,
                 first_token_ms=r.first_token_ms, total_ms=r.total_ms, retries=r.retries, tokens_in=r.tokens_in,
                 tokens_out=r.tokens_out, retrieval_setting=setting_label(setting), answer_grade=g,
                 final_reason=r.reason or ("answered" if r.answered else ""), priority=BATCH, attempts=calls,
@@ -137,15 +160,15 @@ async def main_async(a) -> int:
                                     "citations": r.citations, "retrieved": r.retrieved, "status": r.status},
                                    ensure_ascii=False) + "\n")
             if review or (g == "wrong"):
-                new = not REVIEW.exists()
-                with REVIEW.open("a", newline="", encoding="utf-8") as f:
+                new = not review_path.exists()
+                with review_path.open("a", newline="", encoding="utf-8") as f:
                     w = csv.writer(f)
                     if new:
                         w.writerow(["request_id", "setting", "question_id", "grade", "why", "answer"])
                     w.writerow([rid, sname, q.id, g, why, (r.answer or "")[:1500]])
             print(f"[{sname}] {q.id}: status={r.status} grade={g} calls={r.model_calls} retries={r.retries} "
                   f"tokens={(r.tokens_in or 0) + (r.tokens_out or 0)} total={r.total_ms}ms")
-            if r.status == "rate_limited" and r.reason in ("daily_exhausted", "daily_budget"):
+            if not mock and r.status == "rate_limited" and r.reason in ("daily_exhausted", "daily_budget"):
                 print("STOP: provider daily capacity reported exhausted.")
                 return 4
     if gw is not None:
@@ -162,6 +185,8 @@ def main() -> int:
     ap.add_argument("--run-id")
     ap.add_argument("--deadline", type=float, default=120.0, help="per-question deadline seconds (pacing may wait)")
     ap.add_argument("--ignore-estimate", action="store_true")
+    ap.add_argument("--provider", choices=["real", "mock"], default="real",
+                    help="mock = deterministic extractive stand-in model, offline, no quota, writes results/mock/ only")
     return asyncio.run(main_async(ap.parse_args()))
 
 

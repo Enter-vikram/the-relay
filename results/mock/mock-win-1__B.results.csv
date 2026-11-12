@@ -1,0 +1,22 @@
+request_id,scenario,source,start_time,first_token_ms,total_ms,status,retries,tokens_in,tokens_out,retrieval_setting,answer_grade
+mock-win-1-B-ATT-D01,mock-quality-B,stand-in,2026-11-12T10:36:19.921+00:00,15.0,15.0,ok,0,3361,148,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-ATT-D02,mock-quality-B,stand-in,2026-11-12T10:36:19.931+00:00,,0.0,ok,0,,,B: 600tok/5/no-rerank,refused_wrongly
+mock-win-1-B-ATT-D03,mock-quality-B,stand-in,2026-11-12T10:36:19.960+00:00,0.0,0.0,ok,0,4921,206,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-MOS-D01,mock-quality-B,stand-in,2026-11-12T10:36:19.990+00:00,0.0,0.0,ok,0,5604,199,B: 600tok/5/no-rerank,correct
+mock-win-1-B-MOS-D02,mock-quality-B,stand-in,2026-11-12T10:36:20.023+00:00,0.0,0.0,ok,0,5093,137,B: 600tok/5/no-rerank,correct
+mock-win-1-B-DYN-D01,mock-quality-B,stand-in,2026-11-12T10:36:20.056+00:00,0.0,0.0,ok,0,5384,164,B: 600tok/5/no-rerank,correct
+mock-win-1-B-ATT-M01,mock-quality-B,stand-in,2026-11-12T10:36:20.087+00:00,0.0,0.0,ok,0,3822,186,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-MOS-M01,mock-quality-B,stand-in,2026-11-12T10:36:20.124+00:00,15.0,15.0,ok,0,4941,132,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-DYN-M01,mock-quality-B,stand-in,2026-11-12T10:36:20.152+00:00,16.0,16.0,ok,0,4970,196,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-CMP-01,mock-quality-B,stand-in,2026-11-12T10:36:20.182+00:00,16.0,16.0,ok,0,5436,212,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-CMP-02,mock-quality-B,stand-in,2026-11-12T10:36:20.230+00:00,16.0,16.0,ok,0,5395,123,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-CMP-03,mock-quality-B,stand-in,2026-11-12T10:36:20.261+00:00,16.0,16.0,ok,0,4890,201,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-INT-01,mock-quality-B,stand-in,2026-11-12T10:36:20.291+00:00,0.0,0.0,ok,0,3064,175,B: 600tok/5/no-rerank,correct
+mock-win-1-B-INT-02,mock-quality-B,stand-in,2026-11-12T10:36:20.323+00:00,,0.0,ok,0,,,B: 600tok/5/no-rerank,refused_wrongly
+mock-win-1-B-INT-03,mock-quality-B,stand-in,2026-11-12T10:36:20.351+00:00,0.0,0.0,ok,0,5166,123,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-UNS-01,mock-quality-B,stand-in,2026-11-12T10:36:20.381+00:00,,0.0,ok,0,,,B: 600tok/5/no-rerank,refused_correctly
+mock-win-1-B-UNS-02,mock-quality-B,stand-in,2026-11-12T10:36:20.421+00:00,,15.0,ok,0,,,B: 600tok/5/no-rerank,refused_correctly
+mock-win-1-B-UNS-03,mock-quality-B,stand-in,2026-11-12T10:36:20.452+00:00,,16.0,ok,0,,,B: 600tok/5/no-rerank,refused_correctly
+mock-win-1-B-MIS-01,mock-quality-B,stand-in,2026-11-12T10:36:20.478+00:00,0.0,0.0,ok,0,3367,148,B: 600tok/5/no-rerank,wrong
+mock-win-1-B-MIS-02,mock-quality-B,stand-in,2026-11-12T10:36:20.507+00:00,0.0,0.0,ok,0,5224,203,B: 600tok/5/no-rerank,correct
+mock-win-1-B-MIS-03,mock-quality-B,stand-in,2026-11-12T10:36:20.552+00:00,0.0,0.0,ok,0,5081,132,B: 600tok/5/no-rerank,wrong
